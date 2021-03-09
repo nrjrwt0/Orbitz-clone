@@ -44,7 +44,7 @@ function facebook(){
 }
 face.onclick=facebook
 
-// function aple(){
-//     window.open("https://appleid.apple.com/auth/authorize?response_type=code&client_id=com.orbitz.iphoneprod.release&response_mode=form_post&scope=name%20email&state=PfzW0K7Xi1DOEFXCwCePZu6WNGdNikzcGllMaGOPYlU&nonce=Fb-RIxY-rU6Xev512hAzR8m8zsHrUxcEIdqCuDXkSSU&redirect_uri=https://www.orbitz.com/api/v1/oauth/user/profile/callback/apple-web&locale=en_US",'example', 'width=500,height=500')
-// }
-// apple.onclick = aple
+function aple(){
+    window.open("https://appleid.apple.com/auth/authorize?response_type=code&client_id=com.orbitz.iphoneprod.release&response_mode=form_post&scope=name%20email&state=PfzW0K7Xi1DOEFXCwCePZu6WNGdNikzcGllMaGOPYlU&nonce=Fb-RIxY-rU6Xev512hAzR8m8zsHrUxcEIdqCuDXkSSU&redirect_uri=https://www.orbitz.com/api/v1/oauth/user/profile/callback/apple-web&locale=en_US",'example', 'width=500,height=500')
+}
+apple.onclick = aple
