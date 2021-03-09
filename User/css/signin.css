@@ -155,3 +155,24 @@ padding-top: 5px;
     font-size: 20px;
     top: 12px;
 }
+
+/* sigun responsive */
+@media(max-width:1000px){
+ .main{
+     width: 90%;
+ }
+
+}
+@media(max-width:600px){
+    .main{
+        width: 90%;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+   .facebook,.email{
+       width: 90%;
+       margin: auto;
+   }
+    
+    
+}
