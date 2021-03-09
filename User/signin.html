@@ -6,18 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
    <link rel="stylesheet" href="css/signin.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="main">
         <div class="facebook"></div>
         <div class="email">
             <form action="" id="signin">
-             <input type="text" id="f&l_name" required>
-             <input type="email" id="email" required>
-             <input type="password" id="password" minlength="8" required>
-             <input type="submit" value="Create account">
+                <h2>Or create an account with email</h2>
+            
+             <div class="mail">
+                <input type="text" id="f&l_name" class="inputText"  required><br>
+                <span class="floating-label">First and last name</span>
+            </div>
+            <div class="mail">
+                <input type="email" id="email"  class="inputText"required>
+                <span class="floating-label">Your email address</span>
+            </div>
+            <div class="mail">
+                <input type="password" id="password" class="inputText" minlength="8"  maxlength="30" required> <i class="fa fa-eye" id="togglePassword"></i><br>
+                <span class="floating-label">Password</span>
+            </div>
+            
+             <p>Must be 8 to 30 characters with no spaces
+            </p>
+            <p>By creating an account, I agree to the Orbitz <a href=""><span>Terms of Use,Privacy Policy</span></a>, and <a href=""><span>Orbitz Rewards Terms and Conditions.</span></a></p>
+             <input type="submit" value="Create account" id="create">
             </form>
         </div>
     </div>
+    <script src="js/signin.js"></script>
 </body>
 </html>
