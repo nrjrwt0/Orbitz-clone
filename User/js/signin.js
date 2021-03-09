@@ -40,7 +40,7 @@ face.onmouseleave=faceshow1
 
 
 function facebook(){
-    window.open("https://www.facebook.com/v2.9/dialog/oauth?display=popup&client_id=444673758939659&locale=en_US&response_type=code&redirect_uri=https://www.orbitz.com/user/connect/facebook&scope=email&state=711160c7-ccff-4785-85f3-ae5e4bbfd5e7",'example', 'width=300,height=300') 
+    window.open("https://www.facebook.com/v2.9/dialog/oauth?display=popup&client_id=444673758939659&locale=en_US&response_type=code&redirect_uri=https://www.orbitz.com/user/connect/facebook&scope=email&state=711160c7-ccff-4785-85f3-ae5e4bbfd5e7",'example', 'width=500,height=500') 
 }
 face.onclick=facebook
 

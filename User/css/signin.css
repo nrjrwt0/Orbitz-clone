@@ -28,7 +28,7 @@ input{
   font-size: 14px;
  font-family: Arial, Helvetica, sans-serif;  
  margin-bottom: 10px;
- color: rgb(46, 46, 46)
+ color: #747474
 
 }
 .email > form > p > a > span{
@@ -41,17 +41,21 @@ input{
     text-decoration: underline  #007EAC;;
 }
 .email > form > div> i{
-
+    position: relative;
     margin-left: -35px;
     cursor: pointer;
-    padding-bottom: 10px;
+    bottom: 5px;
+    font-size: 18px;
+  color: #555555;
 }
 
 #create{
     background-color:#C83259;
     color: white;
     width: 96%;
-    
+    border: none;
+    font-size: 18px;
+    margin: 15px 0px; 
 }
 #create:hover{
     background-color:#82223c;
@@ -126,6 +130,8 @@ padding-top: 5px;
     top: 13px;
     font-size: 18px;
     color: #007EAC;
+    font-weight: 400;
+    
 }
 .apple,.face{
     cursor: pointer;
@@ -140,4 +146,12 @@ padding-top: 5px;
     font-size: 25px;
     padding: 10px;
     color: #007EAC;
+}
+
+.apple > i,.face> i{
+    position: absolute;
+    color: #007EAC;
+    right: 30px;
+    font-size: 20px;
+    top: 12px;
 }
