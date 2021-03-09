@@ -5,15 +5,16 @@
   }
 .main{
     display: flex;
-    width: 70%;
+    width: 65%;
+     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .facebook,.email{
-    width: 45%;
+    width: 50%;
    
-    margin: 10px;
+    margin: 10px 5px
 }
 input{
     width: 80%;
@@ -31,13 +32,13 @@ input{
 
 }
 .email > form > p > a > span{
-    color: rgb(18, 108, 143);
+    color: #007EAC;
 }
 .email > form > p > a{
     text-decoration: none;
 }
 .email > form > p > a:hover{
-    text-decoration: underline  rgb(18, 108, 143);;
+    text-decoration: underline  #007EAC;;
 }
 .email > form > div> i{
 
@@ -56,13 +57,10 @@ input{
     background-color:#82223c;
 }
 
-.email > form >h2{
-    margin: 20px 10px;
+.email > form >h2,.facebook> h2{
+    margin: 30px 10px;
 }
-input::placeholder{
-    font-size: 15px;
-    padding-left: 10px;
-}
+
 .email > form> .mail{
     position: relative;
 }
@@ -84,6 +82,8 @@ input:not(:focus):valid ~ .floating-label{
   height: 48px;
    padding-left: 15px;
   padding-top: 12px;
+  border: 1px solid rgb(196, 196, 196);
+
 }
 
 
@@ -93,5 +93,51 @@ input:not(:focus):valid ~ .floating-label{
   left: 15px;
   top: 22px;
   transition: 0.2s ease all;
+  color: gray;
+}
+/* placeholder end */
+
+.apple,.face{
+    position: relative;
+    width: 95%;
+    border: 1px solid rgb(196, 196, 196);
+    height: 48px;
+    margin: 10px 0px
+
+}
+.facebook{
+padding-top: 5px;
+}
+.apple > img{
+    position: absolute;
+    width: 22px;
+    left: 10px;
+    top: 8px;
+}
+.face> img{
+    position: absolute;
+    width: 30px;
+    left: 10px;
+    top: 8px;
+}
+.apple > h2,.face> h2{
+    position: absolute;
+    left: 70px;
+    top: 13px;
+    font-size: 18px;
+    color: #007EAC;
+}
+.apple,.face{
+    cursor: pointer;
 }
 
+.back{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.back > i{
+    font-size: 25px;
+    padding: 10px;
+    color: #007EAC;
+}

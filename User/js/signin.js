@@ -9,4 +9,31 @@ togglePassword.addEventListener('click', function (e) {
     this.classList.toggle('fa-eye-slash');
 });
 
+var apple= document.getElementById('app')
+var face = document.getElementById('face')
 
+function show(){
+    var h1= document.getElementById('show1')
+   h1.style.textDecoration="underline"
+}
+apple.onmouseover=show
+
+
+
+function show1(){
+    var h1= document.getElementById('show1')
+   h1.style.textDecoration="none"
+}
+apple.onmouseleave=show1
+
+function faceshow(){
+    var h1= document.getElementById('show2')
+   h1.style.textDecoration="underline"
+}
+face.onmouseover = faceshow
+
+function faceshow1(){
+    var h1= document.getElementById('show2')
+   h1.style.textDecoration="none"
+}
+face.onmouseleave=faceshow1
