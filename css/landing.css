@@ -18,7 +18,7 @@ nav > ul {
 nav li {
   list-style: none;
 }
-nav a {
+nav > ul > li > a {
   text-decoration: none;
   color: white;
 }
@@ -42,7 +42,7 @@ nav > ul > li > a:hover .arrow {
   border-width: 0px 2px 2px 0px;
 }
 .submenu {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 64px;
   width: 380px;
@@ -62,12 +62,75 @@ nav > ul:nth-child(2) li {
 }
 .submenu li {
   margin: 22px 0px;
+}
+.submenu a {
   color: #888787;
+  text-decoration: none;
 }
 .submenu i {
   margin-right: 14px;
   /* color: #888787; */
 }
+.signinDiv {
+  position: relative;
+}
 .signin {
   display: none;
+  position: absolute;
+  top: 34px;
+  right: 0px;
+  width: 380px;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 10px 20px 3px 2px #ffffff;
+  margin-left: -12px;
+}
+.signin h3 {
+  margin-top: 30px;
+  font-weight: 560;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.signin button {
+  margin: 24px 0px 0px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #cf4c6f;
+}
+.signin button:hover {
+  opacity: 0.85;
+}
+.signin > #createAcc {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #01a4bb;
+  font-size: 18px;
+  font-weight: 500;
+}
+.signin > a {
+  display: block;
+  color: #888787;
+  text-decoration: none;
+  margin: 22px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.signin > hr {
+  width: 100%;
+  /* margin: auto; */
+}
+.signin > a:last-child {
+  display: block;
+  margin-top: 26px;
+  font-size: 16px;
+  font-weight: 500;
 }
