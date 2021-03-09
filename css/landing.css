@@ -1,0 +1,252 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00253c;
+  padding: 17px;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+#logo {
+  margin: 6px 40px 0px 100px;
+}
+nav > ul > li > a:hover {
+  color: #01a4bb;
+}
+.arrow {
+  border: solid white;
+  border-width: 0px 2px 2px 0px;
+  margin-left: 8px;
+  margin-bottom: 2px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+nav > ul > li > a:hover .arrow {
+  border: solid #01a4bb;
+  border-width: 0px 2px 2px 0px;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  top: 64px;
+  width: 380px;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 10px 20px 3px 2px #ffffff;
+  margin-left: -12px;
+}
+
+nav > ul:nth-child(2) {
+  margin: 0px 80px 0px 0px;
+}
+nav > ul:nth-child(2) li {
+  margin: 0px 18px;
+}
+.submenu li {
+  margin: 22px 0px;
+}
+.submenu a {
+  color: #888787;
+  text-decoration: none;
+}
+.submenu i {
+  margin-right: 14px;
+  /* color: #888787; */
+}
+.signinDiv {
+  position: relative;
+}
+.signin {
+  display: none;
+  position: absolute;
+  top: 34px;
+  right: 0px;
+  width: 380px;
+  padding: 10px 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 10px 20px 3px 2px #ffffff;
+  margin-left: -12px;
+}
+.signin h3 {
+  margin-top: 30px;
+  font-weight: 560;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.signin button {
+  margin: 24px 0px 0px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #cf4c6f;
+}
+.signin button:hover {
+  opacity: 0.85;
+}
+.signin > #createAcc {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #01a4bb;
+  font-size: 18px;
+  font-weight: 500;
+}
+.signin > a {
+  display: block;
+  color: #888787;
+  text-decoration: none;
+  margin: 22px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.signin > hr {
+  width: 100%;
+  /* margin: auto; */
+}
+.signin > a:last-child {
+  display: block;
+  margin-top: 26px;
+  font-size: 16px;
+  font-weight: 500;
+}
+#bookingDiv {
+  height: 65vh;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/12/03/ORB_Storefront_HeroWizard_1400x600-V3.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+#bookingDiv > #bookingBox {
+  width: 96%;
+  max-width: 1200px;
+  height: 84%;
+  background-color: white;
+}
+#bookingBox > ul {
+  /* border: 1px solid red; */
+  border-bottom: 1px solid #999999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 80px;
+  padding: 0px 50px;
+  margin-top: 10px;
+}
+#bookingBox > ul > li {
+  cursor: pointer;
+  list-style: none;
+  color: #616161;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 17px 0px;
+  /* border: 1px solid red; */
+}
+#bookingBox > ul > li > i {
+  margin-bottom: 14px;
+}
+#bookingBox > ul > li > p {
+  font-size: 16px;
+}
+#bookingBox > ul > .currentBooking {
+  color: #01a4bb;
+  border-bottom: 3px solid #01a4bb;
+}
+#help {
+  width: 90px;
+  padding: 8px 16px;
+  display: flex;
+  border: 1px solid red;
+  border-radius: 16px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: #01a4bb;
+}
+#help > img {
+  max-width: 30%;
+  margin-right: 10px;
+}
+#help > i {
+  margin-right: 10px;
+}
+
+.bookingHotel {
+  /* border: 1px solid #01a4bb; */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.bookingDetailsBtn {
+  padding: 5px 16px;
+  /* height: 40px; */
+  border: 1px solid #999999;
+  margin: 0px 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.bookingDetailsBtn > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookingDetailsBtn > div > i {
+  color: #616161;
+  margin-right: 12px;
+}
+.bookingDetailsBtn > div > span {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bookingDetailsBtn > div > span > span:first-child {
+  font-size: 14px;
+  margin: 1px 0px;
+  color: #999999;
+}
+.searchBtn {
+  /* width: 39%; */
+  flex: 4;
+}
+.checkInBtn {
+  flex: 1;
+}
+.checkOutBtn {
+  flex: 1;
+}
+.travellersBtn {
+  flex: 2;
+}
