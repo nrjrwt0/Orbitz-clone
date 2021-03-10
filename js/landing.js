@@ -11,6 +11,14 @@ window.addEventListener('load', () => {
   let clickToAddTravellers = document
     .querySelector('.clickToAddTravellers ')
     .addEventListener('click', showtravellersDetailDiv);
+
+  let doneTravelers = document
+    .querySelector('.doneTravelers ')
+    .addEventListener('click', showtravellersDetailDiv);
+
+  var currentDate = new Date();
+  console.log(currentDate.getDate());
+  console.log(currentDate.getMonth());
 });
 
 var changeBookingSlot = (event) => {
@@ -39,15 +47,14 @@ var showsearchLocationDiv = () => {
 let showtravellersDetailDivCounter = 0;
 var showtravellersDetailDiv = () => {
   let travellersDetailDiv = document.querySelector('.travellersDetailDiv');
-  console.log(travellersDetailDiv);
+  // console.log(travellersDetailDiv);
   if (showtravellersDetailDivCounter % 2 == 0) {
     travellersDetailDiv.style.display = 'block';
     showtravellersDetailDivCounter++;
+  } else {
+    travellersDetailDiv.style.display = 'none';
+    showtravellersDetailDivCounter++;
   }
-  // else {
-  //   travellersDetailDiv.style.display = 'none';
-  //   showtravellersDetailDivCounter++;
-  // }
 };
 
 var showbookingDetailShow = (dataKey) => {
