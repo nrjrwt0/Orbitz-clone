@@ -1,0 +1,128 @@
+body{
+    background-color: lightgray;
+   
+}
+.first{
+  
+    width: 80%;
+}
+.seperate{
+    display: flex;
+   
+}
+
+.function,.list{
+    height: 150px;
+    border: 1px solid red;
+}
+.main{
+    width: 95%;
+    display: flex;
+    position: relative;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.hotels{
+    width: 90%;
+    margin:0px 10px;
+}
+/* filter start */
+.filter{
+    width: 30%;
+    padding-top: 100px;
+   
+}
+.filter > button {
+    width: 50px;
+    height: 40px;
+    margin: 2px 1px;
+   border-radius: 10px;
+   border: 1px solid gray;
+}
+.filter > button:hover{
+    background-color: #007E8F;
+    color: white;
+}
+.filter > button >i{
+    color: rgb(65, 65, 65);
+}
+
+.budget{
+    width: 17px;
+    height: 17px;
+   
+}
+
+/* filter end */
+.ads{
+margin-top: 100px;
+ width: 15%;
+ margin-left: 30px;
+
+
+}
+.hotel{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 150px;
+    background-color: white;
+    margin: 10px;
+   
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.detail{
+    margin-left: 5px;
+
+}
+.img{
+    width: 30%;
+}
+.detail > h2,.detail > h2+p{
+    margin: 2px;
+}
+.free{
+    margin-top: 28px;
+    font-size: 15px;
+}
+.rating{
+    font-weight: bold;
+   
+}
+.price{
+ position: absolute;
+  right: 5px;
+  top: 30px;
+  height: 80%;
+    width: 25%;
+  
+}
+.lable{
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(81, 196, 242);
+    color: rgb(3, 3, 24);
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+}
+.price > h3{
+    text-align: right;
+    padding-right: 10px;
+}
+.price > p{
+    margin: 2px;
+    text-align: right;
+    font-size: smaller;
+    color: gray;
+}
+
+#property{
+    width: 90%;
+    height: 35px;
+}
