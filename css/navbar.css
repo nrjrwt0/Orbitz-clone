@@ -50,8 +50,9 @@ nav > ul > li > a:hover .arrow {
   background-color: #ffffff;
   border-radius: 10px;
   color: black;
-  box-shadow: 2px 2px 10px #ffffff;
+  box-shadow: 0px 0px 10px;
   margin-left: -12px;
+  z-index: 20;
 }
 
 nav > ul:nth-child(2) {
@@ -86,6 +87,7 @@ nav > ul:nth-child(2) li {
   color: black;
   box-shadow: 0px 0px 10px;
   margin-left: -12px;
+  z-index: 20;
 }
 .signin h3 {
   margin-top: 30px;

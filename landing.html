@@ -90,81 +90,82 @@
         <section id="bookingDiv">
           <div id="bookingBox">
             <ul class="bookingIcons">
-              <li class="currentBooking">
+              <li data-key="0" class="currentBooking">
                 <i class="fas fa-building fa-lg"></i>
                 <p>Hotels</p>
               </li>
-              <li>
+              <li data-key="1">
                 <i class="fas fa-plane fa-lg"></i>
                 <p>Flights</p>
               </li>
-              <li>
+              <li data-key="2">
                 <i class="fas fa-car fa-lg"></i>
                 <p>Cars</p>
               </li>
-              <li>
+              <li data-key="3">
                 <i class="fas fa-suitcase fa-lg"></i>
                 <p>Packages</p>
               </li>
-              <li>
-                <i class="fas fa-home fa-lg"></i>
-                <p>Vacation Rental</p>
+              <li data-key="4">
+                <i class="fab fa-500px"></i>
+                <p>Things to do</p>
               </li>
-              <li>
+              <li data-key="5">
                 <i class="fas fa-ship fa-lg"></i>
                 <p>Cruises</p>
               </li>
             </ul>
 
-            <!-- one booking at one time -->
-            <div class="bookingDetailShow">
-              <div class="bookingHotel">
-                <div class="searchBtn bookingDetailsBtn">
-                  <div>
-                    <i class="fas fa-map-marker-alt fa-lg"></i>
-                    <i>Going to</i>
-
+            <div class="bookingBox">
+              <!-- hotel booking -->
+              <div data-key="0" class="bookingDetailShow displayDetails">
+                <div class="booking">
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Going to</i>
+                    </div>
                     <div class="searchLocationDiv">
                       <input type="text" placeholder="Where are you going?" />
                     </div>
                   </div>
-                </div>
-                <div class="checkInBtn bookingDetailsBtn">
-                  <div>
-                    <i class="fas fa-calendar-minus fa-lg"></i>
-                    <span>
-                      <span>Check-in</span>
-                      <span>April 8 </span>
-                    </span>
+                  <div class="checkInBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-in</span>
+                        <span>April 8 </span>
+                      </span>
 
-                    <div class="searchDateDiv">
-                      <!-- <iframe
-                        src="https://calendar.google.com/calendar/embed?height=470&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=bmVlcmFqcmF3YXRudEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043"
-                        style="border: solid 1px #777"
-                        width="700"
-                        height="470"
-                        frameborder="0"
-                        scrolling="no"
-                      ></iframe> -->
+                      <div class="searchDateDiv">
+                        <iframe
+                          src="https://calendar.google.com/calendar/embed?height=470&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=bmVlcmFqcmF3YXRudEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043"
+                          style="border: solid 1px #777"
+                          width="700"
+                          height="470"
+                          frameborder="0"
+                          scrolling="no"
+                        ></iframe>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="checkOutBtn bookingDetailsBtn">
-                  <div>
-                    <i class="fas fa-calendar-minus fa-lg"></i>
-                    <span>
-                      <span>Check-out</span>
-                      <span>April 9</span>
-                    </span>
+                  <div class="checkOutBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-out</span>
+                        <span>April 9</span>
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div class="travellersBtn bookingDetailsBtn">
-                  <div>
-                    <i class="fas fa-user fa-lg"></i>
-                    <span>
-                      <span>Travellers</span>
-                      <span>1 room, 2 travellers</span>
-                    </span>
+                  <div class="travellersBtn bookingDetailsBtn">
+                    <div class="clickToAddTravellers">
+                      <i class="fas fa-user fa-lg"></i>
+                      <span>
+                        <span>Travellers</span>
+                        <span>1 room, 2 travellers</span>
+                      </span>
+                    </div>
                     <div class="travellersDetailDiv">
                       <h3>Travelers</h3>
                       <p>Room 1</p>
@@ -190,23 +191,304 @@
                         </div>
                       </div>
                       <p>Add another room</p>
-                      <button>
+                      <button class="doneTravelers">
                         Done
                         <span></span>
                       </button>
                     </div>
                   </div>
+                  <!-- </div> -->
+                </div>
+                <div class="checkboxAndBtn">
+                  <div>
+                    <input type="checkbox" id="addFlight" />
+                    <label for="addFlight">Add a fight</label>
+                    <input type="checkbox" id="addCar" />
+                    <label for="addCar">Add a car</label>
+                  </div>
+                  <div>
+                    <button>Search</button>
+                  </div>
                 </div>
               </div>
-              <div class="checkboxAndBtn">
-                <div>
-                  <input type="checkbox" id="addFlight" />
-                  <label for="addFlight">Add a fight</label>
-                  <input type="checkbox" id="addCar" />
-                  <label for="addCar">Add a car</label>
+
+              <!-- flight booking -->
+              <div data-key="1" class="bookingDetailShow">
+                <div class="bookingButtons">
+                  <button class="activeBtn">Roundtrip</button>
+                  <button>One-way</button>
+                  <button>Multi-city</button>
                 </div>
-                <div>
-                  <button>Search</button>
+                <div class="booking">
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Leaving From</i>
+                    </div>
+                    <div class="searchLocationDiv">
+                      <input type="text" placeholder="Where are you going?" />
+                    </div>
+                  </div>
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Going From</i>
+                    </div>
+                    <div class="searchLocationDiv">
+                      <input type="text" placeholder="Where are you going?" />
+                    </div>
+                  </div>
+
+                  <div class="checkInBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-in</span>
+                        <span>April 8 </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="checkOutBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-out</span>
+                        <span>April 9</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkboxAndBtn">
+                  <div>
+                    <input type="checkbox" id="addFlight" />
+                    <label for="addFlight">Add a place to stay</label>
+                    <input type="checkbox" id="addCar" />
+                    <label for="addCar">Add a car</label>
+                  </div>
+                  <div>
+                    <button>Search</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Car booking -->
+              <div data-key="2" class="bookingDetailShow">
+                <div class="bookingButtons">
+                  <button class="activeBtn">Rental cars</button>
+                  <button>Airport transportation</button>
+                </div>
+                <div class="booking">
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Leaving From</i>
+                    </div>
+                    <div class="searchLocationDiv">
+                      <input type="text" placeholder="Where are you going?" />
+                    </div>
+                  </div>
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Going From</i>
+                    </div>
+                    <div class="searchLocationDiv">
+                      <input type="text" placeholder="Where are you going?" />
+                    </div>
+                  </div>
+
+                  <div class="checkInBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-in</span>
+                        <span>April 8 </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="checkOutBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-out</span>
+                        <span>April 9</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkboxAndBtn">
+                  <div>
+                    <input type="checkbox" id="addFlight" />
+                    <label for="addFlight">Add a place to stay</label>
+                    <input type="checkbox" id="addCar" />
+                    <label for="addCar">Add a car</label>
+                  </div>
+                  <div>
+                    <button>Search</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Package booking -->
+              <div data-key="3" class="bookingDetailShow">
+                <div class="bookingButtons">
+                  <p>Choose one or more items to build your trip:</p>
+                  <button class="activeBtn">Hotel Added</button>
+                  <button class="activeBtn">Flight Added</button>
+                  <button>Add a car</button>
+                </div>
+                <div class="booking">
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Leaving From</i>
+                    </div>
+                    <div class="searchLocationDiv">
+                      <input type="text" placeholder="Where are you going?" />
+                    </div>
+                  </div>
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Going From</i>
+                    </div>
+                    <div class="searchLocationDiv">
+                      <input type="text" placeholder="Where are you going?" />
+                    </div>
+                  </div>
+
+                  <div class="checkInBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-in</span>
+                        <span>April 8 </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="checkOutBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-out</span>
+                        <span>April 9</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkboxAndBtn">
+                  <div>
+                    <input type="checkbox" id="addFlight" />
+                    <label for="addFlight">Add a place to stay</label>
+                    <input type="checkbox" id="addCar" />
+                    <label for="addCar">Add a car</label>
+                  </div>
+                  <div>
+                    <button>Search</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Things to do booking -->
+              <div data-key="4" class="bookingDetailShow">
+                <div class="booking">
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Things to do in</i>
+                    </div>
+                    <div class="searchLocationDiv">
+                      <input type="text" placeholder="Where are you going?" />
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                  <div class="checkInBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>From</span>
+                        <span>April 8 </span>
+                      </span>
+
+                      <div class="searchDateDiv">
+                        <iframe
+                          src="https://calendar.google.com/calendar/embed?height=470&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=bmVlcmFqcmF3YXRudEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043"
+                          style="border: solid 1px #777"
+                          width="700"
+                          height="470"
+                          frameborder="0"
+                          scrolling="no"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkOutBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>To</span>
+                        <span>April 9</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkboxAndBtn">
+                  <div></div>
+                  <div>
+                    <button>Search</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Package booking -->
+              <div data-key="5" class="bookingDetailShow">
+                <div class="booking">
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Leaving From</i>
+                    </div>
+                    <div class="searchLocationDiv">
+                      <input type="text" placeholder="Where are you going?" />
+                    </div>
+                  </div>
+                  <div class="searchBtn bookingDetailsBtn">
+                    <div class="clickToSearchLocation">
+                      <i class="fas fa-map-marker-alt fa-lg"></i>
+                      <i>Going From</i>
+                    </div>
+                    <div class="searchLocationDiv">
+                      <input type="text" placeholder="Where are you going?" />
+                    </div>
+                  </div>
+
+                  <div class="checkInBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-in</span>
+                        <span>April 8 </span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="checkOutBtn bookingDetailsBtn">
+                    <div>
+                      <i class="fas fa-calendar-minus fa-lg"></i>
+                      <span>
+                        <span>Check-out</span>
+                        <span>April 9</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkboxAndBtn">
+                  <div>
+                    <input type="checkbox" id="addFlight" />
+                    <label for="addFlight">Add a place to stay</label>
+                    <input type="checkbox" id="addCar" />
+                    <label for="addCar">Add a car</label>
+                  </div>
+                  <div>
+                    <button>Search</button>
+                  </div>
                 </div>
               </div>
             </div>
