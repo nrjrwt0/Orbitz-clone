@@ -1,0 +1,252 @@
+#bookingDiv {
+  height: 65vh;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/12/03/ORB_Storefront_HeroWizard_1400x600-V3.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#bookingDiv > #bookingBox {
+  width: 96%;
+  max-width: 1200px;
+  /* height: 84%; */
+  background-color: white;
+  margin-top: 30px;
+}
+#bookingBox > ul {
+  /* border: 1px solid red; */
+  border-bottom: 1px solid #999999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 80px;
+  padding: 0px 50px;
+  margin-top: 10px;
+}
+#bookingBox > ul > li {
+  cursor: pointer;
+  list-style: none;
+  color: #616161;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 17px 0px;
+  /* border: 1px solid red; */
+}
+#bookingBox > ul > li > i {
+  margin-bottom: 14px;
+}
+#bookingBox > ul > li > p {
+  font-size: 16px;
+}
+#bookingBox > ul > .currentBooking {
+  color: #01a4bb;
+  border-bottom: 3px solid #01a4bb;
+}
+
+.bookingHotel {
+  /* border: 1px solid #01a4bb; */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.bookingDetailsBtn {
+  padding: 5px 16px;
+  /* height: 40px; */
+  border: 1px solid #999999;
+  margin: 0px 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.bookingDetailsBtn > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookingDetailsBtn > div > i {
+  color: #616161;
+  margin-right: 12px;
+}
+.bookingDetailsBtn > div > span {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bookingDetailsBtn > div > span > span:first-child {
+  font-size: 14px;
+  margin: 1px 0px;
+  color: #999999;
+}
+.searchBtn {
+  /* width: 39%; */
+  flex: 4;
+  position: relative;
+}
+.checkInBtn {
+  flex: 1;
+  position: relative;
+}
+
+.checkOutBtn {
+  flex: 1;
+  /* position: relative; */
+}
+.travellersBtn {
+  flex: 2;
+  position: relative;
+}
+
+.checkboxAndBtn {
+  padding: 20px 40px;
+  /* border: 1px solid red; */
+}
+.checkboxAndBtn > div:first-child {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+.checkboxAndBtn > div:first-child > input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #999999;
+}
+.checkboxAndBtn > div:first-child > label {
+  margin-right: 40px;
+  font-size: 16px;
+  color: #999999;
+}
+.checkboxAndBtn > div:nth-child(2) {
+  width: 180px;
+  margin: 30px auto 30px;
+  /* border: 1px solid red; */
+}
+.checkboxAndBtn button {
+  padding: 14px 67px;
+  outline: none;
+  border: none;
+  background-color: rgb(207, 75, 110);
+  color: white;
+  font-size: 16px;
+}
+.checkboxAndBtn button:hover {
+  opacity: 0.9;
+}
+.searchLocationDiv {
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+  /* padding: 10px 25px; */
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px;
+}
+.searchLocationDiv > input {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #999999;
+  outline: none;
+}
+.searchDateDiv {
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 700px;
+  height: 470px;
+  /* padding: 10px 25px; */
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px;
+}
+#help {
+  width: 90px;
+  padding: 8px 16px;
+  display: flex;
+  border: 1px solid red;
+  border-radius: 16px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: #01a4bb;
+}
+#help > img {
+  max-width: 30%;
+  margin-right: 10px;
+}
+#help > i {
+  margin-right: 10px;
+}
+
+.travellersDetailDiv {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  width: 360px;
+  height: 320px;
+  padding: 20px 18px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0px 0px 10px;
+  font-size: 16px;
+}
+.travellersDetailDiv > h3 {
+  margin-bottom: 18px;
+}
+.travellersDetailDiv > p:nth-child(2) {
+  font-size: 18px;
+}
+.travellersDetailDiv > div > div {
+  color: #999999;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.travellersDetailDiv > div > div > div > a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 12px;
+}
+.mathsign {
+  border: 2px solid black;
+  padding: 1px 7px;
+  border-radius: 50%;
+}
+.mathsign + span {
+  margin: 0px 6px;
+  color: black;
+}
+.travellersDetailDiv > p:nth-child(4) {
+  text-align: right;
+  font-size: 18px;
+  color: #01a4bb;
+}
+.travellersDetailDiv > button {
+  width: 100%;
+  padding: 14px 67px;
+  outline: none;
+  border: none;
+  background-color: rgb(207, 75, 110);
+  color: white;
+  font-size: 16px;
+  margin-top: 30px;
+}
+.travellersDetailDiv button:hover {
+  opacity: 0.9;
+}
