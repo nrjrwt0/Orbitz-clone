@@ -296,6 +296,8 @@
   color: #01a4bb;
   box-shadow: 0px 0px 10px;
   cursor: pointer;
+  background-color: white;
+  z-index: 100;
 }
 #help > img {
   max-width: 30%;
@@ -303,4 +305,51 @@
 }
 #help > i {
   margin-right: 10px;
+}
+
+#adsInPage {
+  background-color: #e6e6e6;
+}
+
+#adsInPageAds {
+  /* border: 1px solid red; */
+  width: 88%;
+  margin: auto;
+  padding: 60px 10px;
+}
+#adsInPageAds > h1 {
+  margin-left: 12px;
+  font-size: 28px;
+}
+.box1sDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  /* border: 1px solid red; */
+}
+
+.box1 {
+  background-image: linear-gradient(white 72%, #999999);
+  margin: 0px 14px;
+  padding: 40px 20px;
+  height: 160px;
+  flex: 1;
+  display: flex;
+}
+
+.box1Images {
+  flex: 1;
+}
+.box1Info {
+  flex: 3;
+}
+.box1Info > h4 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.box1Info > p {
+  color: #999999;
+}
+
+.box2sDiv {
 }
