@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Authorization</title>
-   <link rel="stylesheet" href="css/login.css">
+   <link rel="stylesheet" href="User/css/login.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="back">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
+   <a href="landing.html"> <div class="back" id="cross">
+    <i class="fa fa-times" aria-hidden="true"></i>
+</div></a>
     <hr>
     <div class="main">
         <div class="facebook">
             <h2>Welcome back! Sign in with</h2>
        
             <div class="apple" id="app">
-                <img src="images/applelogo.jpg" alt="">
+                <img src="User/images/applelogo.jpg" alt="">
                 <h2 id="show1">Apple</h2>
                 <i class="fa fa-angle-right"></i>
             </div>
          
             <div class="face" id="face">
-                <img src="images/fb.png" alt="">
+                <img src="User/images/fb.png" alt="">
                 <h2 id="show2">Facebook</h2>
                 <i class="fa fa-angle-right" ></i>
             </div>
@@ -41,13 +41,13 @@
                 <input type="password" id="password" class="inputText" minlength="8"  maxlength="30" required> <i class="fa fa-eye" id="togglePassword"></i><br>
                 <span class="floating-label">Password</span>
             </div>
-            <p id="keep"><input type="checkbox" id="checkbox"><label for="checkbox" id="keepid">Keep me signed in</label><a href=""><span id="pw">Forgot password?</span></a></p>
+            <p id="keep"><input type="checkbox" id="checkbox"><label for="checkbox" id="keepid">Keep me signed in</label><a href="forgotpassword.html"><span id="pw">Forgot password?</span></a></p>
             <p>By signing in, I agree to the  <a href=""><span>Orbitz Rewards Terms and Conditions.</span></a>.</p>
              <input type="submit" value="Create account" id="create">
              <p>Not a member?<a href="signin.html"><span>Create an account</span></a></p>
             </form>
         </div>
     </div>
-    <script src="js/login.js"></script>
+    <script src="User/js/signin.js"></script>
 </body>
 </html>
