@@ -1,0 +1,166 @@
+* {
+ margin: 0px;
+ padding: 0px;
+}
+#for_background{
+    background-color: rgb(216, 216, 216);
+}
+#main_box{
+   
+    display: flex;
+    gap: 100px;
+}
+#box_1{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 4%;
+  
+}
+#whats_new{
+    margin-left: 12%; 
+}
+#first_div{
+    width: 100%;
+    height: 250px;
+    margin-left: 12%;
+    background-color: red;
+}
+.first_div_image{
+    width: 100%;
+    height: 250px;
+}
+.classh3{
+ padding: 10px;
+}
+.classp1{
+    padding: 10px;
+    color: rgb(78, 71, 71);
+}
+#second_div{
+    width: 100%;
+    margin-left: 12%;
+    background-color:white;
+    height: 100px;
+}
+#box_2{
+   
+    width: 30%;
+}
+.class_discription{
+    padding: 35px;
+}
+#small_box1{
+    background-color: white;
+    width: 100%;
+    height:170px ;
+    margin-top: 38px;
+    display: flex;
+}
+
+#small_box2{
+    background-color: white;
+    width: 100%;
+    height:170px ;
+    margin-top:10px;
+    display: flex; 
+
+   
+}
+.classgrey_col{
+    color: rgb(100, 98, 98);
+}
+
+#large{
+    margin-left: 150px;
+   
+    width: 80.5%;
+    height: 250px; 
+    background-image:url("https://forever.travel-assets.com/flex/flexmanager/images/2020/09/28/desktop.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end; 
+}
+#large div{
+    margin-left: 2%;
+    color: white;
+}
+#featured{
+    display: flex;
+    flex-direction: column;
+}
+.f_class{
+    margin-top: 7%;
+    margin-left: 150px;
+}
+#main_travel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+#travel_tips{
+    display: flex;
+    gap: 10px;
+    margin-left: 150px;
+}
+.travel_h1{
+    margin-left: 150px;
+}
+#glamping_spots{
+    width: 400px;
+    height: 200px;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/glamping2.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: whitesmoke
+}
+#airstream{
+    width: 400px;
+    height: 200px;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/airstream.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+#road_9{
+    width: 400px;
+    height: 200px;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/20/roadtripapp.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh");
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+#glamp{
+    display: flex;
+    flex-direction: column;
+}
+#air{
+    display: flex;
+    flex-direction: column;  
+}
+#road{
+    display: flex;
+    flex-direction: column;   
+}
+.discription_small{
+    background-color: white;
+    width: 400px;
+}
+.discription_small > p{
+   padding: 5px;
+   margin: 10px;
+   color: rgb(70, 64, 64);
+}
+#glamping_spots > h2{
+    margin: 5px;
+    
+}
+#airstream >h2{
+    margin: 5px;
+}
+#road_9 > h2 {
+    margin: 5px; 
+}
