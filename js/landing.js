@@ -31,17 +31,16 @@ var changeBookingSlot = (event) => {
 };
 
 let showsearchLocationDivCounter = 0;
-var showsearchLocationDiv = () => {
+var showsearchLocationDiv = (i) => {
   let searchLocationDiv = document.querySelector('.searchLocationDiv');
   // console.log(searchLocationDiv);
-  if (showsearchLocationDivCounter % 2 == 0) {
+  if (showsearchLocationDivCounter % 2 == 0 && i != 1) {
     searchLocationDiv.style.display = 'block';
     showsearchLocationDivCounter++;
+  } else if (showsearchLocationDivCounter % 2 == 1 || i == 1) {
+    searchLocationDiv.style.display = 'none';
+    showsearchLocationDivCounter++;
   }
-  // else {
-  //   searchLocationDiv.style.display = 'none';
-  //   showsearchLocationDivCounter++;
-  // }
 };
 
 let showtravellersDetailDivCounter = 0;
@@ -51,6 +50,7 @@ var showtravellersDetailDiv = () => {
   if (showtravellersDetailDivCounter % 2 == 0) {
     travellersDetailDiv.style.display = 'block';
     showtravellersDetailDivCounter++;
+    showsearchLocationDiv(1);
   } else {
     travellersDetailDiv.style.display = 'none';
     showtravellersDetailDivCounter++;
