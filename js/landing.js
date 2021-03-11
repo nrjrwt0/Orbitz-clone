@@ -12,6 +12,9 @@ window.addEventListener('load', () => {
     .querySelector('.clickToAddTravellers ')
     .addEventListener('click', showtravellersDetailDiv);
 
+  let searchButton = document
+    .querySelector('.searchButton')
+    .addEventListener('click', redirectToHotelPage);
   let doneTravelers = document
     .querySelector('.doneTravelers ')
     .addEventListener('click', showtravellersDetailDiv);
@@ -77,4 +80,11 @@ var showbookingDetailShow = (dataKey) => {
       el.classList.remove('displayDetails');
     }
   });
+};
+
+var redirectToHotelPage = () => {
+  let searchBtn = document.getElementById('searchBtn');
+  let url =
+    '/Users/neerajrawat/Desktop/MASAI COURSE/untitled folder 2/Orbitz-clone/Orbitz-clone/pages.html';
+  window.location.assign(url);
 };
