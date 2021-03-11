@@ -1,5 +1,6 @@
 #bookingDiv {
   height: 65vh;
+  min-height: 486px;
   background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/12/03/ORB_Storefront_HeroWizard_1400x600-V3.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,11 +50,53 @@
   border-bottom: 3px solid #01a4bb;
 }
 
-.bookingHotel {
+.bookingDetailShow {
+  display: none;
+}
+.displayDetails {
+  display: block;
+}
+
+.booking {
   /* border: 1px solid #01a4bb; */
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
+}
+.bookingButtons {
+  margin: 20px 0px;
+  margin-left: 40px;
+}
+.bookingButtons > button {
+  padding: 13px 28px;
+  margin-right: 12px;
+  font-size: 14px;
+  background-color: white;
+  color: #999999;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+.bookingButtons > .activeBtn {
+  background-color: #017f8f;
+  color: white;
+}
+.bookingButtons > button:hover {
+  background-color: #017f8f;
+  color: white;
+}
+.bookingButtons > p {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #999999;
+}
+.bookingButtons > p ~ button {
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+.bookingButtons > p + button:hover {
+  background-color: #017f8f;
+  color: white;
 }
 .bookingDetailsBtn {
   padding: 5px 16px;
@@ -64,9 +107,9 @@
   align-items: center;
   cursor: pointer;
 }
-.bookingDetailsBtn > div {
+.bookingDetailsBtn > div:first-child {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 .bookingDetailsBtn > div > i {
@@ -89,6 +132,12 @@
   flex: 4;
   position: relative;
 }
+.clickToSearchLocation {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  /* text-align: left; */
+}
 .checkInBtn {
   flex: 1;
   position: relative;
@@ -102,7 +151,6 @@
   flex: 2;
   position: relative;
 }
-
 .checkboxAndBtn {
   padding: 20px 40px;
   /* border: 1px solid red; */
@@ -135,6 +183,7 @@
   background-color: rgb(207, 75, 110);
   color: white;
   font-size: 16px;
+  cursor: pointer;
 }
 .checkboxAndBtn button:hover {
   opacity: 0.9;
@@ -151,6 +200,7 @@
   border-radius: 10px;
   color: black;
   box-shadow: 0px 0px 10px;
+  z-index: 10;
 }
 .searchLocationDiv > input {
   width: 100%;
@@ -172,26 +222,8 @@
   border-radius: 10px;
   color: black;
   box-shadow: 0px 0px 10px;
+  z-index: 10;
 }
-#help {
-  width: 90px;
-  padding: 8px 16px;
-  display: flex;
-  border: 1px solid red;
-  border-radius: 16px;
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  color: #01a4bb;
-}
-#help > img {
-  max-width: 30%;
-  margin-right: 10px;
-}
-#help > i {
-  margin-right: 10px;
-}
-
 .travellersDetailDiv {
   display: none;
   position: absolute;
@@ -205,6 +237,7 @@
   color: black;
   box-shadow: 0px 0px 10px;
   font-size: 16px;
+  z-index: 10;
 }
 .travellersDetailDiv > h3 {
   margin-bottom: 18px;
@@ -246,7 +279,77 @@
   color: white;
   font-size: 16px;
   margin-top: 30px;
+  cursor: pointer;
 }
 .travellersDetailDiv button:hover {
   opacity: 0.9;
+}
+#help {
+  width: 90px;
+  padding: 8px 16px;
+  display: flex;
+  /* border: 1px solid red; */
+  border-radius: 16px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: #01a4bb;
+  box-shadow: 0px 0px 10px;
+  cursor: pointer;
+  background-color: white;
+  z-index: 100;
+}
+#help > img {
+  max-width: 30%;
+  margin-right: 10px;
+}
+#help > i {
+  margin-right: 10px;
+}
+
+#adsInPage {
+  background-color: #e6e6e6;
+}
+
+#adsInPageAds {
+  /* border: 1px solid red; */
+  width: 88%;
+  margin: auto;
+  padding: 60px 10px;
+}
+#adsInPageAds > h1 {
+  margin-left: 12px;
+  font-size: 28px;
+}
+.box1sDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  /* border: 1px solid red; */
+}
+
+.box1 {
+  background-image: linear-gradient(white 72%, #999999);
+  margin: 0px 14px;
+  padding: 40px 20px;
+  height: 160px;
+  flex: 1;
+  display: flex;
+}
+
+.box1Images {
+  flex: 1;
+}
+.box1Info {
+  flex: 3;
+}
+.box1Info > h4 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.box1Info > p {
+  color: #999999;
+}
+
+.box2sDiv {
 }
