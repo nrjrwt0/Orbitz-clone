@@ -50,10 +50,14 @@ body{
 .filter > button >i{
     color: rgb(65, 65, 65);
 }
+.filter > div{
+    margin-top: 80px;
+}
 
 .budget{
     width: 17px;
     height: 17px;
+    margin: 10px 0px;
    
 }
 .list > .datalist{
