@@ -290,7 +290,7 @@
   display: flex;
   /* border: 1px solid red; */
   border-radius: 16px;
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   right: 40px;
   color: #01a4bb;
@@ -338,10 +338,23 @@
 }
 
 .box1Images {
-  flex: 1;
+  /* border: 1px solid red; */
+  flex: 1.5;
+  border-radius: 20%;
+  margin-right: 6px;
+  margin-top: -8px;
+  overflow: hidden;
+}
+.bookMore > img {
+  /* border: 1px solid red; */
+  max-width: 90%;
+  max-height: 90%;
+}
+.box1Images > img {
+  max-width: 100%;
 }
 .box1Info {
-  flex: 3;
+  flex: 4;
 }
 .box1Info > h4 {
   font-size: 21px;
@@ -373,7 +386,7 @@
 }
 .flex {
   /* border: 1px solid red; */
-  min-width: 1300px;
+  min-width: 86%;
   /* height: 1625.42px;
   width: 935.99px; */
   /* max-width: 936px; */
@@ -597,6 +610,7 @@
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .foot {
+  color: #999999;
   height: 270px;
   min-width: 100%;
   /* border: 1px solid red; */
@@ -664,4 +678,190 @@
   width: 150px;
   height: 200px;
   padding: 20px;
+}
+
+/* Mid boxes  */
+#for_background {
+  background-color: #e6e6e6;
+}
+#main_box {
+  width: 86%;
+  margin: auto;
+  display: flex;
+  /* gap: 20px; */
+  /* border: 1px solid red; */
+}
+#box_1 {
+  /* border: 1px solid red; */
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  /* margin-left: 4%; */
+}
+#whats_new {
+  /* margin-left: 12%; */
+  padding-left: 6px;
+  margin-bottom: 10px;
+}
+#first_div {
+  width: 100%;
+  height: 250px;
+  /* margin-left: 12%; */
+}
+.first_div_image {
+  width: 100%;
+  height: 250px;
+}
+.classh3 {
+  padding: 10px;
+}
+.classp1 {
+  padding: 10px;
+  color: rgb(78, 71, 71);
+}
+#second_div {
+  width: 100%;
+  /* margin-left: 12%; */
+  background-color: white;
+  height: 100px;
+}
+#box_2 {
+  width: 39%;
+  /* border: 1px solid green; */
+}
+.class_discription {
+  /* border: 1px solid red; */
+
+  padding: 35px;
+}
+#small_box1 {
+  /* border: 1px solid red; */
+  background-color: white;
+  width: 100%;
+  height: 170px;
+  margin-top: 46px;
+  display: flex;
+}
+
+#small_box2 {
+  background-color: white;
+  width: 100%;
+  height: 170px;
+  margin-top: 10px;
+  display: flex;
+}
+.classgrey_col {
+  /* color: rgb(100, 98, 98); */
+}
+
+#large {
+  /* margin-left: 150px; */
+  width: 100%;
+  height: 250px;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/09/28/desktop.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+#large div {
+  margin-left: 2%;
+  color: white;
+}
+#featured {
+  width: 86%;
+  margin: 0px auto 60px;
+  padding: 0 9px 0 9px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.f_class {
+  margin-top: 5%;
+  margin-bottom: 14px;
+
+  /* border: 1px solid red; */
+
+  /* margin-left: 150px; */
+}
+#main_travel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  padding-bottom: 20px;
+  /* border: 1px solid red; */
+}
+#travel_tips {
+  display: flex;
+  width: 86%;
+  margin: auto;
+  gap: 12px;
+}
+.travel_h1 {
+  width: 86%;
+  margin: 14px auto;
+
+  /* border: 1px solid red; */
+}
+#glamping_spots {
+  width: 396px;
+  height: 200px;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/glamping2.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: whitesmoke;
+  opacity: 0.8;
+}
+#airstream {
+  width: 396px;
+  height: 200px;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/05/06/airstream.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  opacity: 0.8;
+}
+#road_9 {
+  width: 396px;
+  height: 200px;
+  background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/07/20/roadtripapp.jpeg?impolicy=fcrop&w=900&h=386&q=mediumHigh');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  opacity: 0.8;
+}
+#glamp {
+  display: flex;
+  flex-direction: column;
+}
+#air {
+  display: flex;
+  flex-direction: column;
+}
+#road {
+  display: flex;
+  flex-direction: column;
+}
+.discription_small {
+  background-color: white;
+  width: 400px;
+}
+.discription_small > p {
+  padding: 5px;
+  margin: 10px;
+  color: #999999;
+}
+#glamping_spots > h2 {
+  /* border: 1px solid red; */
+  font-size: 22px;
+  margin: 5px;
+}
+#airstream > h2 {
+  margin: 5px;
+}
+#road_9 > h2 {
+  margin: 5px;
 }

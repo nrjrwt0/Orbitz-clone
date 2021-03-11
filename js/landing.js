@@ -39,44 +39,44 @@ var showsearchLocationDiv = (i) => {
     searchLocationDiv.style.display = 'block';
     showsearchLocationDivCounter++;
 
-  if (showsearchLocationDivCounter % 2 == 0 && i != 1) {
-    searchLocationDiv.style.display = 'block';
-    showsearchLocationDivCounter++;
-  } else if (showsearchLocationDivCounter % 2 == 1 || i == 1) {
-    searchLocationDiv.style.display = 'none';
-    showsearchLocationDivCounter++;
-
-  }
-  // else {
-  //   searchLocationDiv.style.display = 'none';
-  //   showsearchLocationDivCounter++;
-  // }
-};
-
-let showtravellersDetailDivCounter = 0;
-var showtravellersDetailDiv = () => {
-  let travellersDetailDiv = document.querySelector('.travellersDetailDiv');
-  // console.log(travellersDetailDiv);
-  if (showtravellersDetailDivCounter % 2 == 0) {
-    travellersDetailDiv.style.display = 'block';
-    showtravellersDetailDivCounter++;
-    showsearchLocationDiv(1);
-  } else {
-    travellersDetailDiv.style.display = 'none';
-    showtravellersDetailDivCounter++;
-  }
-};
-
-var showbookingDetailShow = (dataKey) => {
-  let bookingDetailShowAll = document.querySelectorAll('.bookingDetailShow');
-  // console.log(bookingDetailShowAll);
-
-  bookingDetailShowAll.forEach((el) => {
-    let dataKey2 = el.getAttribute('data-key');
-    if (dataKey == dataKey2) {
-      el.classList.add('displayDetails');
-    } else {
-      el.classList.remove('displayDetails');
+    if (showsearchLocationDivCounter % 2 == 0 && i != 1) {
+      searchLocationDiv.style.display = 'block';
+      showsearchLocationDivCounter++;
+    } else if (showsearchLocationDivCounter % 2 == 1 || i == 1) {
+      searchLocationDiv.style.display = 'none';
+      showsearchLocationDivCounter++;
     }
-  });
+    // else {
+    //   searchLocationDiv.style.display = 'none';
+    //   showsearchLocationDivCounter++;
+    // }
+  }
+
+  let showtravellersDetailDivCounter = 0;
+  var showtravellersDetailDiv = () => {
+    let travellersDetailDiv = document.querySelector('.travellersDetailDiv');
+    // console.log(travellersDetailDiv);
+    if (showtravellersDetailDivCounter % 2 == 0) {
+      travellersDetailDiv.style.display = 'block';
+      showtravellersDetailDivCounter++;
+      showsearchLocationDiv(1);
+    } else {
+      travellersDetailDiv.style.display = 'none';
+      showtravellersDetailDivCounter++;
+    }
+  };
+
+  var showbookingDetailShow = (dataKey) => {
+    let bookingDetailShowAll = document.querySelectorAll('.bookingDetailShow');
+    // console.log(bookingDetailShowAll);
+
+    bookingDetailShowAll.forEach((el) => {
+      let dataKey2 = el.getAttribute('data-key');
+      if (dataKey == dataKey2) {
+        el.classList.add('displayDetails');
+      } else {
+        el.classList.remove('displayDetails');
+      }
+    });
+  };
 };
