@@ -6,10 +6,11 @@
 
 #hotel_dis {
   background-color: white;
-  width: 80%;
-  margin-left: 12%;
+  width: 86%;
+  margin: auto;
   /* border: 1px solid rebeccapurple; */
-  padding: 5px 12px;
+  padding: 10px 12px;
+  margin-top: 12px;
 }
 #covid_rule {
   background-color: #616161;
@@ -42,13 +43,20 @@
 }
 #images {
   margin-top: 20px;
-  /* border: 1px solid rebeccapurple; */
   display: flex;
   gap: 5px;
   width: 100%;
 }
+.large-img img {
+  /* border: 1px solid rebeccapurple; */
+  margin-top: 10px;
+}
 #images img {
   max-width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+#images img:hover {
+  transform: scale(0.96);
 }
 
 #small_pic {
@@ -83,20 +91,24 @@
   margin-top: -24px;
   border-radius: 3px;
   background-color: #cf4b6e;
+  border-radius: 4px;
   border: none;
   outline: none;
   color: white;
   /* margin-top: 5px;s */
   font-size: 16px;
 }
+#reserve_btn:hover {
+  opacity: 0.9;
+}
 #hor_line {
 }
 #vip_access {
+  /* border: 1px solid red; */
   background-color: white;
-  width: 80%;
-  margin-left: 12%;
+  width: 86%;
+  margin: 20px auto;
   padding: 5px;
-  margin-top: 14px;
 }
 #vip_access > div {
   display: flex;
@@ -128,11 +140,11 @@
   margin-top: 10px;
 }
 #lock_logo {
+  /* border: 1px solid blue; */
   background-color: white;
-  width: 80%;
-  margin-left: 12%;
+  width: 86%;
+  margin: 14px auto 20px;
   padding: 5px;
-  margin-top: 14px;
 }
 #member {
   display: flex;
@@ -144,4 +156,232 @@
 }
 .lock_logo {
   margin-top: 2px;
+}
+
+/* hotel rooms list */
+.place {
+  width: 86%;
+  margin: auto;
+
+  /* border: 1px solid red; */
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rooms {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+  justify-content: start;
+  margin: 12px 0px;
+  padding: 6px 16px;
+}
+.hotpic {
+  width: 260px;
+  height: 180px;
+  /* background:url('./images/dorm.jpg'); */
+  background-repeat: no-repeat;
+  /* border: 1px solid red; */
+  margin-right: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hotpic img {
+  min-width: 100%;
+  min-height: 96%;
+  /* border: 1px solid yellowgreen; */
+  transition: transform 0.3s ease-in-out;
+}
+.hotpic img:hover {
+  transform: scale(1.07);
+}
+.rodeta {
+  height: 160px;
+  width: 265px;
+  padding: 9px 0 9px 0;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+.roomtype {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 19.5px;
+  margin-bottom: 8px;
+  /* padding-left: 6px; */
+}
+.roomrating {
+  font-size: 16px;
+  margin-top: 12px;
+  line-height: 13.5px;
+  color: #616161;
+  margin-left: 2px;
+}
+.sqft {
+  font-size: 14px;
+  line-height: 12px;
+  display: flex;
+  /* border: 1px solid red; */
+  margin-left: 5px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  justify-content: space-between;
+  width: 250px;
+}
+.tesla {
+  margin-right: 2px;
+}
+.humid {
+  margin-top: 0px;
+}
+.moredetail {
+  font-size: 15px;
+  line-height: 13.5px;
+  color: #007e8f;
+  margin-top: 10px;
+  margin-left: 7px;
+}
+.moredetail:hover {
+  cursor: pointer;
+  text-decoration: underline solid rgb(0, 126, 143);
+}
+
+.pridet {
+  width: 600px;
+  height: 160px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+}
+.cancellation {
+  width: 280px;
+  /* border: 1px solid red; */
+}
+.frcn {
+  /* border: 1px solid red; */
+
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 17px;
+  /* font-weight: 700; */
+  line-height: 13.5px;
+  color: #0e8445;
+  cursor: pointer;
+}
+.frcn:hover {
+  text-decoration: underline solid rgb(0, 126, 143);
+}
+.before {
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  margin-left: 25px;
+  color: #616161;
+}
+.now {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 89%;
+  padding: 8px 0px;
+  /* height: 50px; */
+  margin-left: 22px;
+  margin-top: 15px;
+  margin-bottom: 4px;
+}
+.parm {
+  /* border: 1px solid green; */
+  margin-top: 8px;
+  width: 89%;
+}
+.check {
+  font-size: 14px;
+  line-height: 12px;
+  color: #616161;
+}
+.dollar {
+  /* border: 1px solid rgb(255, 0, 0); */
+  width: 180px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  /* border: 1px solid green; */
+}
+.prc {
+  /* border: 1px solid green; */
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 21.2143px;
+  color: #616161;
+  text-align: right;
+  margin-top: 15px;
+  margin-right: 8px;
+}
+.pernt {
+  font-size: 14px;
+  line-height: 10.8px;
+  color: #616161;
+  text-align: right;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+.totalprc {
+  font-size: 16px;
+  line-height: 10.8px;
+  text-align: right;
+  margin-right: 8px;
+  margin-top: 8px;
+  font-weight: 700;
+}
+.taxnfar {
+  /* border: 1px solid yellow; */
+  font-size: 15px;
+  line-height: 10.8px;
+  text-align: right;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.prcdet {
+  font-size: 16px;
+  line-height: 13.5px;
+  color: #007e8f;
+  margin-right: 8px;
+  margin-top: 8px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.prcdet:hover {
+  text-decoration: underline solid rgb(0, 126, 143);
+  cursor: pointer;
+}
+.butresrv {
+  /* width: 66.3368px;
+  height: 26.9965px; */
+  padding: 12px 16px;
+  background-color: #cf4b6d;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+  justify-content: right;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.butresrv:hover {
+  opacity: 0.9;
 }
