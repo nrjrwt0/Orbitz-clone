@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+
+
+#hotel_dis{
+    background-color: white;
+    width: 80%;
+    margin-left:12%;
+    padding: 5px;
+   
+}
+#covid_rule{
+ background-color: rgb(95, 90, 90);
+ width: 90%;
+ margin-left:5%; 
+ border-radius: 5px;
+ 
+}
+#covid_box1{
+display: flex;
+gap: 10px;
+color: white;
+}
+#alert{
+    margin: 20px;
+}
+#see_all{
+    margin-left:5%;
+}
+#images{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+#small_pic{
+    display: flex;
+    gap: 5px;
+   
+}
+#options{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+#options_2{
+    display: flex;
+    gap: 25px;
+}
+#reserve_btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 3px;
+    background-color: rgb(209, 60, 60);
+    color: white;
+    margin-top: 5px;
+    font-size: 16px;
+}
+#hor_line{
+   
+}
+#vip_access{
+    background-color: white;
+    width: 80%;
+    margin-left:12%;
+    padding: 5px;
+    margin-top: 14px;
+}
+#vip_access > div{
+ display: flex;
+ 
+ 
+}
+#id_vip{
+ margin-right: 90px;
+}
+
+#vip_para{
+    display: flex;
+    gap:20px;
+    margin-left: 1%;
+    padding: 1%;
+}
+#vip_para>div{
+    width: 30%;
+}
+
+#vip_para>div:nth-child(2){
+    display: flex;
+    gap: 20px;
+}
+#vip_para>div:nth-child(3){
+    display: flex;
+    gap: 20px;
+}
+.vip_img{
+   margin-right: 10%;
+   margin-top: 10px;
+}
+#lock_logo{
+    background-color: white;
+    width: 80%;
+    margin-left:12%;
+    padding: 5px;
+    margin-top: 14px;
+}
+#member{
+    display: flex;
+    gap: 5px;  
+}
+#sign{
+    display: flex;
+    gap: 30px;
+}
+.lock_logo{
+    margin-top: 2px;
+}
