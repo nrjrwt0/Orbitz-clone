@@ -5,18 +5,54 @@ body {
   padding-left: 5%;
   width: 80%;
 }
+.pagesBooking {
+  /* border: 1px solid red; */
+  padding: 0px 30px;
+  max-height: 160px;
+}
+.bookingDetailsBtn {
+  background-color: white;
+  height: 50px;
+}
+.searchBtn {
+  flex: 3;
+  /* position: relative; */
+}
+.clickToSearchLocation {
+  width: 100%;
+  height: 100%;
+}
+.checkInBtn {
+  flex: 2;
+  position: relative;
+}
+
+.checkOutBtn {
+  flex: 1;
+}
+
+.travellersBtn {
+  flex: 1;
+}
+.checkboxAndBtn button {
+  margin-top: -20px;
+}
 .seperate {
   /* position: relative; */
   display: flex;
   /* top: 100px; */
+  /* border: 1px solid red; */
 }
 
 .function,
 .list {
-  height: 80px;
+  /* border: 1px solid red; */
+  height: 40px;
   margin-right: 5%;
 }
 .main {
+  /* border: 1px solid blue; */
+
   width: 95%;
   display: flex;
   position: relative;
@@ -24,13 +60,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .hotels {
+  /* border: 1px solid red; */
   width: 90%;
-  margin: 0px 10px;
+  margin: 30px 10px;
 }
 /* filter start */
 .filter {
   width: 30%;
   padding-top: 100px;
+}
+.filter h3 {
+  /* border: 1px solid red; */
+  padding: 20px 0px;
 }
 .filter > button {
   width: 50px;
@@ -59,7 +100,8 @@ body {
   width: 250px;
   position: relative;
   left: 730px;
-  top: 28px;
+  bottom: 14px;
+  /* border: 1px solid yellowgreen; */
 }
 
 .list > .datalist > select {
@@ -81,7 +123,8 @@ body {
 .list > a > h4 {
   position: absolute;
   color: black;
-  top: 95px;
+  /* border: 2px solid red; */
+  top: 200px;
   left: 330px;
   font-size: 13px;
 }
@@ -89,7 +132,7 @@ body {
   position: relative;
   width: 230px;
   height: 170px;
-  bottom: 50px;
+  bottom: 100px;
   left: 0px;
 }
 /* filter end */
@@ -157,4 +200,5 @@ img {
 #property {
   width: 90%;
   height: 35px;
+  margin-bottom: 12px;
 }
