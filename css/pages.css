@@ -1,172 +1,160 @@
-body{
-    background-color: lightgray;
-   
+body {
+  background-color: lightgray;
 }
-.first{
-    padding-left: 5%;
-    width: 80%;
+.first {
+  padding-left: 5%;
+  width: 80%;
 }
-.seperate{
-   position: relative;
-    display: flex;
-    top: 100px;
-   
+.seperate {
+  /* position: relative; */
+  display: flex;
+  /* top: 100px; */
 }
 
-.function,.list{
-    height: 80px;
-    margin-right: 5%;
-   
+.function,
+.list {
+  height: 80px;
+  margin-right: 5%;
 }
-.main{
-    width: 95%;
-    display: flex;
-    position: relative;
+.main {
+  width: 95%;
+  display: flex;
+  position: relative;
 
-    font-family: Arial, Helvetica, sans-serif;
-    
+  font-family: Arial, Helvetica, sans-serif;
 }
-.hotels{
-    width: 90%;
-    margin:0px 10px;
+.hotels {
+  width: 90%;
+  margin: 0px 10px;
 }
 /* filter start */
-.filter{
-    width: 30%;
-    padding-top: 100px;
-   
+.filter {
+  width: 30%;
+  padding-top: 100px;
 }
 .filter > button {
-    width: 50px;
-    height: 40px;
-    margin: 2px 1px;
-   border-radius: 10px;
-   border: 1px solid gray;
+  width: 50px;
+  height: 40px;
+  margin: 2px 1px;
+  border-radius: 10px;
+  border: 1px solid gray;
 }
-.filter > button:hover{
-    background-color: #007E8F;
-    color: white;
+.filter > button:hover {
+  background-color: #007e8f;
+  color: white;
 }
-.filter > button >i{
-    color: rgb(65, 65, 65);
+.filter > button > i {
+  color: rgb(65, 65, 65);
 }
-.filter > div{
-    margin-top: 80px;
-}
-
-.budget{
-    width: 17px;
-    height: 17px;
-    margin: 10px 0px;
-   
-}
-.list > .datalist{
-    width: 250px;
-    position: relative;
-    left: 730px;
-    top: 28px;
+.filter > div {
+  margin-top: 80px;
 }
 
-.list > .datalist > select{
+.budget {
+  width: 17px;
+  height: 17px;
+  margin: 10px 0px;
+}
+.list > .datalist {
+  width: 250px;
+  position: relative;
+  left: 730px;
+  top: 28px;
+}
+
+.list > .datalist > select {
   height: 50px;
   width: 250px;
   padding-top: 20px;
   font-size: 17px;
 }
 
-.list > .datalist > select:hover{
-    border: 2px solid  #007E8F;
+.list > .datalist > select:hover {
+  border: 2px solid #007e8f;
 }
-.list > .datalist > span{
-    position: absolute;
-    top: 3px;
-    left: 5px;
-    color: rgb(65, 65, 65);
+.list > .datalist > span {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  color: rgb(65, 65, 65);
 }
-.list > a> h4{
-    position: absolute;
-    color: black;
-    top: 95px;
-    left: 330px;
-    font-size: 13px;
+.list > a > h4 {
+  position: absolute;
+  color: black;
+  top: 95px;
+  left: 330px;
+  font-size: 13px;
 }
-.list > img{
-    position: relative;
-    width: 230px;
-    height: 170px;
-    bottom: 50px;
-    left: 0px;
+.list > img {
+  position: relative;
+  width: 230px;
+  height: 170px;
+  bottom: 50px;
+  left: 0px;
 }
 /* filter end */
-.ads{
-
- width: 15%;
- margin-right: 20px;
-
-
+.ads {
+  width: 15%;
+  margin-right: 20px;
 }
-.hotel{
-    position: relative;
-    display: flex;
-    width: 100%;
-    margin: auto;
-    height: 150px;
-    background-color: white;
-    margin: 10px;
-   
+.hotel {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 150px;
+  background-color: white;
+  margin: 10px;
 }
-img{
-    width: 100%;
-    height: 100%;
+img {
+  width: 100%;
+  height: 100%;
 }
-.detail{
-    margin-left: 5px;
-
+.detail {
+  margin-left: 5px;
 }
-.img{
-    width: 30%;
+.img {
+  width: 30%;
 }
-.detail > h3,.detail > h3+p{
-    margin: 2px;
+.detail > h3,
+.detail > h3 + p {
+  margin: 2px;
 }
-.free{
-    margin-top: 28px;
-    font-size: 15px;
+.free {
+  margin-top: 28px;
+  font-size: 15px;
 }
-.rating{
-    font-weight: bold;
-   
+.rating {
+  font-weight: bold;
 }
-.price{
- position: absolute;
+.price {
+  position: absolute;
   right: 5px;
   top: 30px;
   height: 80%;
-    width: 25%;
-  
+  width: 25%;
 }
-.lable{
-    height: 20px;
-    border-radius: 10px;
-    background-color: rgb(81, 196, 242);
-    color: rgb(3, 3, 24);
-    font-size: 15px;
-    text-align: center;
-    margin-left: 10px;
+.lable {
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(81, 196, 242);
+  color: rgb(3, 3, 24);
+  font-size: 15px;
+  text-align: center;
+  margin-left: 10px;
 }
-.price > h3{
-    text-align: right;
-    padding-right: 10px;
+.price > h3 {
+  text-align: right;
+  padding-right: 10px;
 }
-.price > p{
-    margin: 2px;
-    text-align: right;
-    font-size: smaller;
-    color: gray;
-}
-
-#property{
-    width: 90%;
-    height: 35px;
+.price > p {
+  margin: 2px;
+  text-align: right;
+  font-size: smaller;
+  color: gray;
 }
 
+#property {
+  width: 90%;
+  height: 35px;
+}

@@ -338,10 +338,23 @@
 }
 
 .box1Images {
-  flex: 1;
+  /* border: 1px solid red; */
+  flex: 1.5;
+  border-radius: 20%;
+  margin-right: 6px;
+  margin-top: -8px;
+  overflow: hidden;
+}
+.bookMore > img {
+  /* border: 1px solid red; */
+  max-width: 90%;
+  max-height: 90%;
+}
+.box1Images > img {
+  max-width: 100%;
 }
 .box1Info {
-  flex: 3;
+  flex: 4;
 }
 .box1Info > h4 {
   font-size: 21px;
@@ -766,6 +779,7 @@
 .f_class {
   margin-top: 5%;
   margin-bottom: 14px;
+
   /* border: 1px solid red; */
 
   /* margin-left: 150px; */
@@ -786,6 +800,7 @@
 .travel_h1 {
   width: 86%;
   margin: 14px auto;
+
   /* border: 1px solid red; */
 }
 #glamping_spots {
