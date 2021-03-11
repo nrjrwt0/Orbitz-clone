@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>available</title>
-    <link rel="stylesheet" href="css/pages.css" />
+
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/pages.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -83,6 +85,94 @@
         </li>
       </ul>
     </nav>
+    <div class="bookingBox pagesBooking">
+      <div data-key="0" class="bookingDetailShow displayDetails">
+        <div class="booking">
+          <div class="searchBtn bookingDetailsBtn">
+            <div class="clickToSearchLocation">
+              <i class="fas fa-map-marker-alt fa-lg"></i>
+              <i>Going to</i>
+            </div>
+            <div class="searchLocationDiv">
+              <input type="text" placeholder="Where are you going?" />
+            </div>
+          </div>
+          <div class="checkInBtn bookingDetailsBtn">
+            <div>
+              <i class="fas fa-calendar-minus fa-lg"></i>
+              <span>
+                <span>Check-in</span>
+                <span>April 8 </span>
+              </span>
+
+              <div class="searchDateDiv">
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?height=470&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=bmVlcmFqcmF3YXRudEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043"
+                  style="border: solid 1px #777"
+                  width="700"
+                  height="470"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="checkOutBtn bookingDetailsBtn">
+            <div>
+              <i class="fas fa-calendar-minus fa-lg"></i>
+              <span>
+                <span>Check-out</span>
+                <span>April 9</span>
+              </span>
+            </div>
+          </div>
+          <div class="travellersBtn bookingDetailsBtn">
+            <div class="clickToAddTravellers">
+              <i class="fas fa-user fa-lg"></i>
+              <span>
+                <span>Travellers</span>
+                <span>1 room, 2 ...</span>
+              </span>
+            </div>
+            <div class="travellersDetailDiv">
+              <h3>Travelers</h3>
+              <p>Room 1</p>
+              <div>
+                <div>
+                  <p>Adults</p>
+                  <div>
+                    <span class="mathsign">-</span>
+                    <span class="adultsNo">2</span>
+                    <span class="mathsign">+</span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <p>Childern</p>
+                    <a href="#">Age 0 to 17</a>
+                  </div>
+                  <div>
+                    <span class="mathsign">-</span>
+                    <span class="childNo">0</span>
+                    <span class="mathsign">+</span>
+                  </div>
+                </div>
+              </div>
+              <p>Add another room</p>
+              <button class="doneTravelers">
+                Done
+                <span></span>
+              </button>
+            </div>
+          </div>
+          <div class="checkboxAndBtn">
+            <div>
+              <button>Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="seperate">
       <div class="first">
         <div class="function"></div>
@@ -228,5 +318,6 @@
     </div>
     <script src="js/pages.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/landing.js"></script>
   </body>
 </html>
