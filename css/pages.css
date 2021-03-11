@@ -29,6 +29,7 @@ body{
 .hotels{
     width: 90%;
     margin:0px 10px;
+    cursor: pointer;
 }
 /* filter start */
 .filter{
@@ -101,7 +102,9 @@ body{
 .ads{
 
  width: 15%;
+ height: 900px;
  margin-right: 20px;
+ cursor: pointer;
 
 
 }
