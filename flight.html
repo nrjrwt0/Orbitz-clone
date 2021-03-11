@@ -1,429 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      *{
-              margin: 0px;
-             padding: 0px;
-              /* box-sizing: border-box; */
-        }
-        .back{
-            height: 1994.6px;
-            width: 1494.44px;
-            /* max-width: 1440px; */
-            /* background-color: #FFFFFF; */
-            background-color:#E6E6E6;
-            padding-top:18px;
-            display:flex;
-            justify-content:center;
-        }
-        .flex{
-            height: 1625.42px;
-            width: 935.99px;
-            /* max-width: 936px; */
-            padding: 0 9px 0 9px;
-            /* border: 2px solid red; */
-            justify-content: space-around;
-            margin: 0 280px 0 280px;
-        }
-        .vacation{
-            height: 23.3333px;
-            width: 891.024px;
-            /* border: 2px solid red; */
-            margin: auto;
-            font-size: 21px;
-            font-weight: 700;
-            line-height: 24px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            
-        }
-        .vacbox{
-            height: 271.806px;
-            width: 918.003px;
-            padding: 9px 9px 50px 0;
-            /* border: 2px solid red; */
-        }
-        .picts{
-            cursor: pointer;
-            float: left;
-            height: 212.5px;
-            width: 212.5px;
-            /* border: 2px solid red; */
-            margin: 12px 0px 0px 10.5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 15px;
-            font-weight: 700;
-            color: white;
-            /* text-decoration: underline solid rgb(0,126,143); */
-            line-height: 15.4286px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .one{
-            background:url('animal.png');
-        }
-        .two{
-            background: url('incl.png');
-        }
-        .three{
-            background: url('lux.png');
-        }
-        .four{
-            background: url('min.png');
-        }
-        .pico{
-            height: 255.575px;
-            width: 918px;
-            padding: 9px 9px 18px 0;
-            max-width: 936px;
-            /* border: 2px solid red; */
-        }
-        .mob{
-            float: left;
-            height: 256px;
-            width: 270px;
-            /* border: 2px solid red; */
-            background: url('mob.png');
-        }
-        .content{
-            float: left;
-            width: 638px;
-            height: 252px;
-            /* border: 2px solid red; */
-            background-color: white;
-            padding-left: 5px;
-            /* background: url('content.png'); */
-        }
-        .info{
-            float: left;
-            /* border: 1px solid red; */
-            width: 417.378px;
-            height: 250px;
-            padding-left: 5px;
-        }
-        .rewards{
-            font-size: 21px;
-            font-weight: 700;
-            line-height: 24px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            height:46.667px ;
-            width: 417.378px;
-            /* border: 1px solid red; */
-            margin-top: 10px;
-        }
-        .sline{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin-top: 10px;
-            margin-left: 20px;
-            font-size: 10.5px;
-            line-height: 13.5px;
-        }
-        sline>ul>li{
-            margin-bottom: 10px;
-        }
-        .text{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 13.5px;
-            font-weight: 700;
-            line-height: 16.5px;
-            height: 15.5356px;
-            width: 417.378px;
-            /* border: 1px solid red; */
-            margin-top: 20px;
+      * {
+        margin: 0px;
+        padding: 0px;
+        /* box-sizing: border-box; */
+      }
+      .back {
+        height: 1994.6px;
+        width: 1494.44px;
+        /* max-width: 1440px; */
+        /* background-color: #FFFFFF; */
+        background-color: #e6e6e6;
+        padding-top: 18px;
+        display: flex;
+        justify-content: center;
+      }
+      .flex {
+        height: 1625.42px;
+        width: 935.99px;
+        /* max-width: 936px; */
+        padding: 0 9px 0 9px;
+        /* border: 2px solid red; */
+        justify-content: space-around;
+        margin: 0 280px 0 280px;
+      }
+      .vacation {
+        height: 23.3333px;
+        width: 891.024px;
+        /* border: 2px solid red; */
+        margin: auto;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .vacbox {
+        height: 271.806px;
+        width: 918.003px;
+        padding: 9px 9px 50px 0;
+        /* border: 2px solid red; */
+      }
+      .picts {
+        cursor: pointer;
+        float: left;
+        height: 212.5px;
+        width: 212.5px;
+        /* border: 2px solid red; */
+        margin: 12px 0px 0px 10.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        /* text-decoration: underline solid rgb(0,126,143); */
+        line-height: 15.4286px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .one {
+        background: url('animal.png');
+      }
+      .two {
+        background: url('incl.png');
+      }
+      .three {
+        background: url('lux.png');
+      }
+      .four {
+        background: url('min.png');
+      }
+      .pico {
+        height: 255.575px;
+        width: 918px;
+        padding: 9px 9px 18px 0;
+        max-width: 936px;
+        /* border: 2px solid red; */
+      }
+      .mob {
+        float: left;
+        height: 256px;
+        width: 270px;
+        /* border: 2px solid red; */
+        background: url('mob.png');
+      }
+      .content {
+        float: left;
+        width: 638px;
+        height: 252px;
+        /* border: 2px solid red; */
+        background-color: white;
+        padding-left: 5px;
+        /* background: url('content.png'); */
+      }
+      .info {
+        float: left;
+        /* border: 1px solid red; */
+        width: 417.378px;
+        height: 250px;
+        padding-left: 5px;
+      }
+      .rewards {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 46.667px;
+        width: 417.378px;
+        /* border: 1px solid red; */
+        margin-top: 10px;
+      }
+      .sline {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 10.5px;
+        line-height: 13.5px;
+      }
+      .sline > ul > li {
+        margin-bottom: 10px;
+      }
+      .text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 13.5px;
+        font-weight: 700;
+        line-height: 16.5px;
+        height: 15.5356px;
+        width: 417.378px;
+        /* border: 1px solid red; */
+        margin-top: 20px;
+      }
+      .floating {
+        float: left;
+        width: 135.122px;
+        height: 35.9896px;
+        margin-top: 10px;
+        margin-right: 8px;
+      }
+      .enter {
+        height: 32px;
+        width: 132px;
+      }
+      .get {
+        cursor: pointer;
+        margin-right: 0;
+        background-color: #eb3966;
+        width: 126px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .lawo {
+        /* border: 2px solid red; */
+        margin-top: 60px;
+        font-size: 9px;
+        width: 417.378px;
+        height: 22.2222px;
+        line-height: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .qr {
+        float: left;
+        /* border: 1px solid red; */
+      }
+      .qrimg {
+        background: url('QR.jpg');
+        width: 140px;
+        height: 140px;
+        margin-left: 40px;
+      }
+      .scan {
+        margin-top: 10px;
+        margin-left: 60px;
+        width: 127.135px;
+        font-size: 10.5px;
+        font-weight: 700;
+        line-height: 13.5px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .more {
+        width: 918.003px;
+        height: 221.181px;
+        padding: 40px 0 9px 0;
+        max-width: 936px;
+        /* border: 2px solid red; */
+      }
+      .heading {
+        width: 918.0038px;
+        height: 23.333px;
+        /* border: 1px solid red; */
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .sep {
+        cursor: pointer;
+        height: 35.9722px;
+        width: 279.021px;
+        background-color: white;
+        float: left;
+        margin-right: 18px;
+        margin-bottom: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 9px;
+        line-height: 16.5px;
+        font-weight: 700;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .foot {
+        height: 180.399px;
+        width: 840.017px;
+        /* border: 1px solid red; */
+        margin-top: 10px;
+        padding-left: 50px;
+      }
+      .enlist > ul > li {
+        display: inline;
+        margin-right: 4px;
+        font-size: 9px;
+        line-height: 12px;
+        cursor: pointer;
 
-        }
-        .floating{
-            float: left;
-            width: 135.122px;
-            height: 35.9896px;
-            margin-top: 10px;
-            margin-right: 8px;
-        }
-        .enter{
-            height: 32px;
-            width: 132px;
-        }
-        .get{
-            cursor: pointer;
-            margin-right: 0;
-            background-color:#eb3966;
-            width: 126px;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 15px;
-            color: white;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .lawo{
-            /* border: 2px solid red; */
-            margin-top: 60px;
-            font-size: 9px;
-            width: 417.378px;
-            height: 22.2222px;
-            line-height: 12px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-        }
-        .qr{
-            float: left;
-            /* border: 1px solid red; */
-        }
-        .qrimg{
-            background: url('QR.jpg');
-            width: 140px;
-            height: 140px;
-            margin-left: 40px;
-        }
-        .scan{
-               margin-top: 10px;
-               margin-left: 60px;
-               width: 127.135px;
-               font-size: 10.5px;
-               font-weight: 700;
-               line-height: 13.5px;
-               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .more{
-            width: 918.003px;
-            height: 221.181px;
-            padding: 40px 0 9px 0;
-            max-width: 936px;
-            /* border: 2px solid red; */
-        }
-        .heading{
-
-            width: 918.0038px;
-            height: 23.333px;
-            /* border: 1px solid red; */
-            font-size: 21px;
-            line-height: 24px;
-            font-weight: 700;
-            padding-bottom: 10px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .sep{
-            cursor: pointer;
-            height: 35.9722px;
-            width: 279.021px;
-            background-color: white;
-            float: left;
-            margin-right: 18px;
-            margin-bottom: 7px;
-            display: flex;
-            align-items:center;
-            justify-content:flex-start;
-            padding-left: 9px;
-            line-height: 16.5px;
-            font-weight: 700;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .foot{
-            height: 180.399px;
-            width: 840.017px;
-            /* border: 1px solid red; */
-            margin-top: 10px;
-            padding-left: 50px;
-        }
-        .enlist>ul>li{
-            display: inline;
-            margin-right: 4px;
-            font-size: 9px;
-            line-height: 12px;
-            cursor: pointer;
-            
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .enlist>ul>li:hover{
-            text-decoration: underline solid rgb(0,126,143);
-            color: rgb(0,126,143);
-            cursor: pointer;
-        }
-        .sell{
-            height: 26.9965px;
-            width: 145.208px;
-            /* border: 1px solid red; */
-            margin:auto;
-            padding: 10px;
-            font-size: 9px;
-            line-height: 12px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .sell:hover{
-            cursor: pointer;
-            text-decoration: underline solid rgb(0,126,143);
-            color: rgb(0,126,143);
-        }
-        .copyright{
-            height: 59.4271px;
-            width: 800.017px;
-            /* border: 1px solid red; */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .rate{
-            cursor:default;
-            height: 44.444px;
-            width: 360px;
-            text-align: center;
-            font-size: 9px;
-            line-height: 12px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .expedia{
-            cursor: pointer;
-            margin: auto;
-            width: 150px;
-            height: 200px;
-        }
-        
-
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .enlist > ul > li:hover {
+        text-decoration: underline solid rgb(0, 126, 143);
+        color: rgb(0, 126, 143);
+        cursor: pointer;
+      }
+      .sell {
+        height: 26.9965px;
+        width: 145.208px;
+        /* border: 1px solid red; */
+        margin: auto;
+        padding: 10px;
+        font-size: 9px;
+        line-height: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .sell:hover {
+        cursor: pointer;
+        text-decoration: underline solid rgb(0, 126, 143);
+        color: rgb(0, 126, 143);
+      }
+      .copyright {
+        height: 59.4271px;
+        width: 800.017px;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .rate {
+        cursor: default;
+        height: 44.444px;
+        width: 360px;
+        text-align: center;
+        font-size: 9px;
+        line-height: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .expedia {
+        cursor: pointer;
+        margin: auto;
+        width: 150px;
+        height: 200px;
+      }
     </style>
-</head>
-<body>
-   <div class="back">
-        <div class="flex">
-            <div class="vacbox">
-                <div class="vacation">
-                     Vacation your way
-                </div>
-                <div class="picts one">
-                    Pet-friendly
-                </div>
-                <div class="picts two">
-                     Luxury
-                </div>
-                <div class="picts three">
-                     All-inclusive
-                </div>
-                <div class="picts four">
-                       Last minute
-                </div>
-                
-            </div>
-            <div class="pico">
-                <div class="mob">
-                    
-                </div>
-                <div class="content">
-                    <div class="info">
-                        <div class="rewards">
-                            Rewards are waiting for you in the Orbitz app
-                        </div>
-                        <div class="sline">
-                            <ul>
-                                <li>Earn 4% back when you book your hotel in app, vs. 3% on site</li>
-                                <li>Get flight status and gate number notifications</li>
-                                <li>Have questions about your stay? Message your hotel right in the app</li>
-                            </ul>
-                        </div>
-                        <div class="text">
-                            Text yourself a download link
-                        </div>
-                        <select name="" class="input floating" aria-placeholder="Country-code">
-                            <option value="USA +1" selected>USA +1</option>
-                            <option value="India +91">India +91</option>
-                            <option value="Pakistan +92">Pakistan +92</option>
-                        </select>
-                        <input class="floating enter" type="number" placeholder="Phone Number">
-                        <button class="floating get">
-                            Get the app
-                        </button>
-                        <div class="lawo">
-                            By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.
-                        </div>
-                            
-                    </div>
-                    <div class="qr">
-                         <div class="qrimg">
-
-                         </div>
-                         <div class="scan">
-                            Scan the QR code
-                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="more">
-                <div class="heading">
-                      More destinations
-                </div>
-                <div class="sep">
-                      Beach destinations
-                </div>
-                <div class="sep">
-                      Flight to top city destinations
-                </div>
-                <div class="sep">
-                      Popular airlines
-                </div>
-                <div class="sep">
-                      Routes to and from Maui island
-                </div>
-                <div class="sep">
-                      Routes to and from Las Vegas
-                </div>
-                <div class="sep">
-                      Routes to and from Los Angleles
-                </div>
-                <div class="sep">
-                      Routes to and from NYC
-                </div>
-                <div class="sep">
-                      Flights to Florida destinations
-                </div>
-                <div class="sep">
-                      Flights to Southern US destinations
-                </div>
-                <div class="sep">
-                      Other popular routes
-                </div>
-                <div class="sep">
-                      Destination deals
-                </div>
-                <div class="sep">
-                      International destinations
-                </div>
-            </div>
-
-            <div class="foot">
-                <div class="enlist">
-                    <ul>
-                        <li>About Orbitz</li>
-                        <li>Investor Relations</li>
-                        <li>Jobs</li>
-                        <li>Media Room</li>
-                        <li>Advertising</li>
-                        <li>Become an Affiliate</li>
-                        <li>Add a Hotel</li>
-                        <li>Add an Activity</li>
-                        <li>Orbitz for Business</li>
-                        <li>Orbitz for Agents</li>
-                        <li>Terms of Use</li>
-                        <li>Support</li>
-                        <li>Privacy Policy</li>
-                    </ul>
-                </div>
-                <div class="sell">
-                    Do Not Sell My Personal Information
-                </div>
-                <div class="copyright">
-                      <div class="rate">
-                        © 2021 Orbitz, LLC, An Expedia Group Company. All rights reserved. Orbitz, Orbitz.com, and the Orbitz logo are either registered trademarks or trademarks of Orbitz, LLC in the U.S. and/or other countries. Other logos or product and company names mentioned herein may be the property of their respective owners. CST #2063530-50
-                      </div>
-                </div>
-                <div class="expedia">
-                    <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
-                </div>
-            </div>
-              
+  </head>
+  <body>
+    <div class="back">
+      <div class="flex">
+        <div class="vacbox">
+          <div class="vacation">Vacation your way</div>
+          <div class="picts one">Pet-friendly</div>
+          <div class="picts two">Luxury</div>
+          <div class="picts three">All-inclusive</div>
+          <div class="picts four">Last minute</div>
         </div>
-       
+        <div class="pico">
+          <div class="mob"></div>
+          <div class="content">
+            <div class="info">
+              <div class="rewards">
+                Rewards are waiting for you in the Orbitz app
+              </div>
+              <div class="sline">
+                <ul>
+                  <li>
+                    Earn 4% back when you book your hotel in app, vs. 3% on site
+                  </li>
+                  <li>Get flight status and gate number notifications</li>
+                  <li>
+                    Have questions about your stay? Message your hotel right in
+                    the app
+                  </li>
+                </ul>
+              </div>
+              <div class="text">Text yourself a download link</div>
+              <select
+                name=""
+                class="input floating"
+                aria-placeholder="Country-code"
+              >
+                <option value="USA +1" selected>USA +1</option>
+                <option value="India +91">India +91</option>
+                <option value="Pakistan +92">Pakistan +92</option>
+              </select>
+              <input
+                class="floating enter"
+                type="number"
+                placeholder="Phone Number"
+              />
+              <button class="floating get">Get the app</button>
+              <div class="lawo">
+                By providing your number, you agree to receive a one-time
+                automated text message with a link to get the app. Standard text
+                message rates may apply.
+              </div>
+            </div>
+            <div class="qr">
+              <div class="qrimg"></div>
+              <div class="scan">Scan the QR code</div>
+            </div>
+          </div>
+        </div>
+        <div class="more">
+          <div class="heading">More destinations</div>
+          <div class="sep">Beach destinations</div>
+          <div class="sep">Flight to top city destinations</div>
+          <div class="sep">Popular airlines</div>
+          <div class="sep">Routes to and from Maui island</div>
+          <div class="sep">Routes to and from Las Vegas</div>
+          <div class="sep">Routes to and from Los Angleles</div>
+          <div class="sep">Routes to and from NYC</div>
+          <div class="sep">Flights to Florida destinations</div>
+          <div class="sep">Flights to Southern US destinations</div>
+          <div class="sep">Other popular routes</div>
+          <div class="sep">Destination deals</div>
+          <div class="sep">International destinations</div>
+        </div>
+
+        <div class="foot">
+          <div class="enlist">
+            <ul>
+              <li>About Orbitz</li>
+              <li>Investor Relations</li>
+              <li>Jobs</li>
+              <li>Media Room</li>
+              <li>Advertising</li>
+              <li>Become an Affiliate</li>
+              <li>Add a Hotel</li>
+              <li>Add an Activity</li>
+              <li>Orbitz for Business</li>
+              <li>Orbitz for Agents</li>
+              <li>Terms of Use</li>
+              <li>Support</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="sell">Do Not Sell My Personal Information</div>
+          <div class="copyright">
+            <div class="rate">
+              © 2021 Orbitz, LLC, An Expedia Group Company. All rights reserved.
+              Orbitz, Orbitz.com, and the Orbitz logo are either registered
+              trademarks or trademarks of Orbitz, LLC in the U.S. and/or other
+              countries. Other logos or product and company names mentioned
+              herein may be the property of their respective owners. CST
+              #2063530-50
+            </div>
+          </div>
+          <div class="expedia">
+            <img
+              src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
