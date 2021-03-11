@@ -34,13 +34,23 @@ let showsearchLocationDivCounter = 0;
 var showsearchLocationDiv = (i) => {
   let searchLocationDiv = document.querySelector('.searchLocationDiv');
   // console.log(searchLocationDiv);
+
+  if (showsearchLocationDivCounter % 2 == 0) {
+    searchLocationDiv.style.display = 'block';
+    showsearchLocationDivCounter++;
+
   if (showsearchLocationDivCounter % 2 == 0 && i != 1) {
     searchLocationDiv.style.display = 'block';
     showsearchLocationDivCounter++;
   } else if (showsearchLocationDivCounter % 2 == 1 || i == 1) {
     searchLocationDiv.style.display = 'none';
     showsearchLocationDivCounter++;
+
   }
+  // else {
+  //   searchLocationDiv.style.display = 'none';
+  //   showsearchLocationDivCounter++;
+  // }
 };
 
 let showtravellersDetailDivCounter = 0;

@@ -53,7 +53,7 @@ var hotels = [{
 var names = ["Jw Marriott", "four season hotel", "sofitel", "Taj lands", "Trident"]
 var prices = [39, 47, 48, 58, 59, 61, 67, 68, 78, 89,]
 var Price= []
-
+// ascending order
 for (var j = 0; j < 10; j++) {
     for (var i = 0; i < 10; i++) {
         if (prices[j] == hotels[i].price) {
@@ -62,11 +62,28 @@ for (var j = 0; j < 10; j++) {
 
     }
 }
-console.log(Price);
+//console.log(Price);
+// ascending order end
+//search
+function show(){
+    var searcharr=[]
+var search= document.getElementById('property').value;
+
+for(var i=0;i<hotels.length;i++){
+    if(hotels[i].name==search){
+        searcharr.push(hotels[i])
+    }
+}
+console.log(searcharr);
+if(searcharr.length>0){
+    add(searcharr)
+}
+}
+ document.getElementById('property').addEventListener('keyup',show)
 
 function add(hotels) {
     document.getElementById('parent').textContent=""
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i <hotels.length; i++) {
 
         var parent = document.getElementById('parent')
         var hotel = document.createElement('div')
@@ -125,6 +142,5 @@ select.addEventListener('change', function () {
 add(Price)
    },2000)
 },false)
-
 
 
