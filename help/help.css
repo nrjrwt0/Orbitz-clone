@@ -1,121 +1,150 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  #main_div{
-      background-color:whitesmoke;
-      height: 650px;
-      width: 25%;
-    border-radius: 15px;
-  }
-  #how_para{
-      display: flex;
-      height: 35px;
-      background-color: #01B1FF ;
-      justify-content: space-between;
-      border-radius: 3px;
-
-  }
-  .button_x{
-      height: 25px;
-      width: 25px;
-  }
-  .button_x1{
-    height: 25px;
-    width: 25px;
-    margin-top: 4px;
-    font-size: 16px;
-    border-radius: 4px;
-   
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-#para_chat{
- text-align: center;
- margin-top: 10px;
- margin-right: 25px;
+#main_div {
+  background-color: whitesmoke;
+  height: 650px;
+  width: 25%;
+  border-radius: 15px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
 }
-
-#logo{
- text-align: center;
- margin-top: 50px;
+#how_para {
+  display: flex;
+  height: 42px;
+  background-color: #01b1ff;
+  justify-content: space-between;
+  border-radius: 3px;
+  padding: 13px;
+  font-size: 16px;
+  font-weight: 500;
 }
-#logo_para{
+.button_x {
+  margin-top: -8px;
+}
+.button_x1 {
+  height: 25px;
+  width: 25px;
+  margin-top: 4px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+#para_chat {
   text-align: center;
+  margin-top: 13px;
+  margin-right: 20px;
 }
-#chat_start{
+
+#logo {
+  text-align: center;
+  margin: 30px 0px 10px;
+}
+#logo_para {
+  text-align: center;
+  margin-bottom: 14px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+#chat_start {
   display: flex;
   gap: 5px;
   margin-top: 5px;
+  margin-left: 10px;
 }
-.para_chat{
+#chat_start img {
+  margin: 10px 4px;
+}
+.para_chat {
   height: 45px;
-  background-color: rgb(214, 213, 213);
+  background-color: #999999;
   border-radius: 10px;
-  
+  margin-bottom: 8px;
+  color: ;
 }
-#chat_start2{
+#chat_start2 {
   display: flex;
   gap: 5px;
   margin-top: 10px;
+  margin-left: 10px;
 }
-.para_chat{
+#chat_start2 img {
+  margin: 15px 4px;
+}
+.para_chat {
   height: 45px;
   background-color: rgb(214, 213, 213);
   border-radius: 10px;
-  
+  font-size: 15px;
+  padding: 3px 10px;
 }
-.para_chat1{
+.para_chat1 {
   height: 65px;
   background-color: rgb(214, 213, 213);
+  max-width: 96%;
   border-radius: 10px;
-
-  
+  font-size: 15px;
+  padding: 6px 8px;
 }
-#button_section{
- 
+#button_section {
   margin-top: 150px;
 }
-#down_btn{
+#down_btn {
   display: flex;
   gap: 10px;
   text-align: center;
   margin-bottom: 20px;
 }
-#first_btn{
- margin-left: 10px;
- 
+#first_btn {
+  margin-left: 10px;
 }
-.button_class{
-  height: 40px;
-  width: 110px;
-  color: #01B1FF;
+.button_class {
+  /* height: 40px; */
+  /* width: 110px; */
+  margin-right: 8px;
+  padding: 1px 10px;
+  color: #01b1ff;
   border-radius: 25px;
-  border-color:#01B1FF ;
+  border-color: #01b1ff;
+  margin-bottom: 4px;
 }
-.button_class1{
-  height: 40px;
-  width: 150px;
-  color: #01B1FF;
+.button_class:hover {
+  background-color: #01b1ff;
+  color: white;
+}
+.button_class1 {
+  /* height: 40px;
+  width: 150px; */
+  padding: 8px 14px;
+  color: #01b1ff;
+  margin-left: 12px;
   border-radius: 25px;
-  border-color:#01B1FF ;
+  border-color: #01b1ff;
 }
-#last_line{
+.button_class1:hover {
+  background-color: #01b1ff;
+  color: white;
+}
+#last_line {
   display: flex;
   gap: 10px;
   margin-top: 25px;
   margin-left: 10px;
 }
-.input_box{
-  height: 50px;
+.input_box {
+  height: 40px;
+  padding: 10px;
   width: 270px;
   border-color: rgb(182, 179, 179);
   font-size: 16px;
   border-radius: 5px;
+  outline: none;
 }
-.icon_place{
+.icon_place {
   margin-top: 5px;
 }
-
-
-
-

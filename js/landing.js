@@ -20,11 +20,25 @@ window.addEventListener('load', () => {
     .querySelector('.searchButton')
     .addEventListener('click', redirectToHotelPage);
 
+  let helpBtn = document
+    .getElementById('help')
+    .addEventListener('click', showChatBox);
+
+  let button_x1 = document
+    .querySelector('.button_x1')
+    .addEventListener('click', closeChatBox);
   // var currentDate = new Date();
   // console.log(currentDate.getDate());
   // console.log(currentDate.getMonth());
 });
-
+var showChatBox = () => {
+  let chatBox = document.getElementById('main_div');
+  chatBox.style.display = 'block';
+};
+var closeChatBox = () => {
+  let chatBox = document.getElementById('main_div');
+  chatBox.style.display = 'none';
+};
 var changeBookingSlot = (event) => {
   let currentBooking = document.querySelector('.currentBooking');
   currentBooking.classList.remove('currentBooking');
