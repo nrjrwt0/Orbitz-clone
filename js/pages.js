@@ -1,3 +1,12 @@
+
+var win= window.location.href
+var url =new URL(win)
+
+var params = new URLSearchParams(url.search)
+
+var search=params.get('search')
+console.log(search);
+
 var hotels = [
   {
     name: 'JW Marriott',
@@ -115,7 +124,7 @@ function add(hotels) {
     var details = document.createElement('div');
     details.setAttribute('class', 'detail');
     hotel.appendChild(details);
-    details.innerHTML = `<h3>${hotels[i].name}</h3><p>Mumbai</p>`;
+    details.innerHTML = `<h3>${hotels[i].name}</h3><p>${search}</p>`;
 
     var free = document.createElement('p');
     free.innerHTML = `Free Cancellation <br> Reserve Now,pay later`;
@@ -158,3 +167,4 @@ select.addEventListener(
   },
   false
 );
+

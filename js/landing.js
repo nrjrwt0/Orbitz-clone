@@ -89,5 +89,6 @@ var redirectToHotelPage = () => {
   console.log(searchedLocation);
   let searchBtn = document.getElementById('searchBtn');
   let url = 'pages.html';
-  window.location.assign(url + '?' + searchedLocation);
+
+   window.location.assign(`${url}?search=${searchedLocation}`);
 };
