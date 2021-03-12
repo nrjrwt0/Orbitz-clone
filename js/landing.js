@@ -12,12 +12,13 @@ window.addEventListener('load', () => {
     .querySelector('.clickToAddTravellers ')
     .addEventListener('click', showtravellersDetailDiv);
 
-  let searchButton = document
-    .querySelector('.searchButton')
-    .addEventListener('click', redirectToHotelPage);
   let doneTravelers = document
     .querySelector('.doneTravelers ')
     .addEventListener('click', showtravellersDetailDiv);
+
+  let searchButton = document
+    .querySelector('.searchButton')
+    .addEventListener('click', redirectToHotelPage);
 
   // var currentDate = new Date();
   // console.log(currentDate.getDate());
@@ -83,8 +84,11 @@ var showbookingDetailShow = (dataKey) => {
 };
 
 var redirectToHotelPage = () => {
+  let searchedLocation = document.querySelector('.searchLocationDiv > input')
+    .value;
+  console.log(searchedLocation);
   let searchBtn = document.getElementById('searchBtn');
   let url =
     '/Users/neerajrawat/Desktop/MASAI COURSE/untitled folder 2/Orbitz-clone/Orbitz-clone/pages.html';
-  window.location.assign(url);
+  window.location.assign(url + '?' + searchedLocation);
 };
