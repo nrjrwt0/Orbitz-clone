@@ -1,16 +1,15 @@
+var win = window.location.href;
+var url = new URL(win);
 
-var win= window.location.href
-var url =new URL(win)
+var params = new URLSearchParams(url.search);
 
-var params = new URLSearchParams(url.search)
-
-var search=params.get('search')
+var search = params.get('search');
 console.log(search);
-var s1= search
-var s2=s1
-var mapframe= document.getElementById('mapframe')
-var mapurl= `https://www.google.com/maps/embed/v1/place?q=${search}&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8`
-mapframe.setAttribute('src',mapurl)
+var s1 = search;
+var s2 = s1;
+var mapframe = document.getElementById('mapframe');
+var mapurl = `https://www.google.com/maps/embed/v1/place?q=${search}&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8`;
+mapframe.setAttribute('src', mapurl);
 var hotels = [
   {
     name: 'JW Marriott',
@@ -148,7 +147,6 @@ for (var j = 0; j < 10; j++) {
 // ascending order end
 //search
 
-
 function show() {
   var searcharr = [];
   var search1 = document.getElementById('property').value;
@@ -172,7 +170,7 @@ function add(hotels) {
     var hotel = document.createElement('div');
     hotel.setAttribute('class', 'hotel');
     hotel.setAttribute('id', `${i}`);
-    hotel.onclick= hoteldata
+    hotel.onclick = hoteldata;
     // console.log(hotel.id);
     parent.appendChild(hotel);
     var imgdiv = document.createElement('div');
@@ -214,7 +212,7 @@ function add(hotels) {
     p2.textContent = 'inclusive all taxes';
   }
 }
-shuffle(hotels)
+shuffle(hotels);
 add(hotels);
 
 var select = document.getElementById('datalist');
@@ -229,20 +227,20 @@ select.addEventListener(
   false
 );
 
-
-function hoteldata(){
-  var id =this.id
-  var data=hotels[id]
-  var url="hotelDetails.html"
-  window.location.href=`${url} ?name=${data.name}`
+function hoteldata() {
+  var id = this.id;
+  var data = hotels[id];
+  var url = 'hotelDetails.html';
+  window.location.href = `${url}?name=${data.name}`;
 }
 
 function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
+  var currentIndex = array.length,
+    temporaryValue,
+    randomIndex;
 
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
-
     // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
@@ -255,7 +253,5 @@ function shuffle(array) {
 
   return array;
 }
-
-
 
 console.log(hotels);
