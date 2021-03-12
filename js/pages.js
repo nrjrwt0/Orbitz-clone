@@ -6,7 +6,11 @@ var params = new URLSearchParams(url.search)
 
 var search=params.get('search')
 console.log(search);
-
+var s1= search
+var s2=s1
+var mapframe= document.getElementById('mapframe')
+var mapurl= `https://www.google.com/maps/embed/v1/place?q=${search}&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8`
+mapframe.setAttribute('src',mapurl)
 var hotels = [
   {
     name: 'JW Marriott',
@@ -89,12 +93,14 @@ for (var j = 0; j < 10; j++) {
 //console.log(Price);
 // ascending order end
 //search
+
+
 function show() {
   var searcharr = [];
-  var search = document.getElementById('property').value;
+  var search1 = document.getElementById('property').value;
 
   for (var i = 0; i < hotels.length; i++) {
-    if (hotels[i].name == search) {
+    if (hotels[i].name == search1) {
       searcharr.push(hotels[i]);
     }
   }
@@ -112,6 +118,7 @@ function add(hotels) {
     var hotel = document.createElement('div');
     hotel.setAttribute('class', 'hotel');
     hotel.setAttribute('id', `${i}`);
+    hotel.onclick= hoteldata
     // console.log(hotel.id);
     parent.appendChild(hotel);
     var imgdiv = document.createElement('div');
@@ -124,7 +131,7 @@ function add(hotels) {
     var details = document.createElement('div');
     details.setAttribute('class', 'detail');
     hotel.appendChild(details);
-    details.innerHTML = `<h3>${hotels[i].name}</h3><p>${search}</p>`;
+    details.innerHTML = `<h3>${hotels[i].name}</h3><p>${s2}</p>`;
 
     var free = document.createElement('p');
     free.innerHTML = `Free Cancellation <br> Reserve Now,pay later`;
@@ -153,7 +160,7 @@ function add(hotels) {
     p2.textContent = 'inclusive all taxes';
   }
 }
-
+shuffle(hotels)
 add(hotels);
 
 var select = document.getElementById('datalist');
@@ -168,3 +175,33 @@ select.addEventListener(
   false
 );
 
+
+function hoteldata(){
+  var id =this.id
+  var data=hotels[id]
+  var url="hotelDetails.html"
+  window.location.href=`${url} ?name=${data.name}`
+}
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+
+console.log(hotels);
