@@ -50,4 +50,26 @@ function aple(){
 apple.onclick = aple
 
 
-// Redirect to landing page
+// data storing
+
+var form1 = document.getElementById('signin')
+        var signup = []
+        function signUp(e) {
+            e.preventDefault()
+            var name = document.getElementById("f&l_name").value;
+            var email = document.getElementById("email").value;
+           
+            var pass = document.getElementById("password").value;
+            var user = {
+                name:name,
+                email: email,
+                password: pass
+            }
+            signup.push(user)
+            sign = JSON.stringify(signup)
+            localStorage.setItem("signup", sign)
+            swal("Sign in Success", "Enjoy your Trip", "success");
+           
+        }
+        form1.onsubmit = signUp
+

@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
+    <link rel="stylesheet" href="css/popup.css">
   </head>
 
   <body style="background-color: #e6e6e6">
@@ -66,7 +67,7 @@
         <li><a href="#">Support</a></li>
         <li><a href="#">Trips</a></li>
         <li class="signinDiv">
-          <a href="#">Sign In</a>
+          <a href="#" id="username">Sign In</a>
           <div class="signin">
             <h3>Members can access discounts, points and special features</h3>
             <a href="login.html"> <button>Sign in</button></a>
@@ -179,7 +180,7 @@
 
         <div>
           <div>
-            <button id="reserve_btn">Reserve a room</button>
+            <a href="#section1"><button id="reserve_btn">Reserve a room</button></a>
           </div>
         </div>
       </div>
@@ -269,7 +270,7 @@
     </div>
 
     <!-- Hotel room list -->
-    <div class="place">
+    <div class="place" id="section1">
       <div class="rooms">
         <div class="hotpic">
           <img src="./images/delux.jpg" alt="" />
@@ -330,7 +331,7 @@
             <div class="prcdet">
               Price details <i class="fas fa-chevron-down"></i>
             </div>
-            <button class="butresrv">Reserve</button>
+            <button class="butresrv" id="res">Reserve</button>
           </div>
         </div>
       </div>
@@ -591,6 +592,99 @@
         </div>
       </div>
     </div>
+
+
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="pou">
+            <div class="yopayment">
+                <i class="fas fa-times"></i> Your payment options
+            </div>
+            <div class="shield">
+                <div class="ico">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="freecan">
+                    Free cancellation before Fri, Apr 9
+                </div>
+                <div class="planchange">
+                    You can change or cancel this stay if plans change. Because flexibility matters.
+                </div>
+                <hr>
+            </div>
+            <div class="paynow">
+                <div class="conto">
+                     <div class="paynowline">
+                        Pay now
+                     </div>
+                     <div class="localcurr">
+                        - We will process your payment in your local currncy
+                     </div>
+                </div>
+                <div class="rightboxprice">
+                    <div class="pricedollar">
+                        $96
+                    </div>
+                    <div class="pernight">
+                        per night
+                    </div>
+                    <div class="totalprice">
+                        $105 total
+                    </div>
+                    <div class="incldfar">
+                        includes taxes and fare
+                    </div>
+                 
+                    <button class="revv" id="book">
+                      Pay now
+                  </button>
+                  
+                </div>
+            </div>
+            <hr>
+            <div class="paynow">
+                <div class="conto secnd">
+                     <div class="paynowline">
+                        Pay when you stay
+                     </div>
+                     <div class="localcurr">
+                         - You will not be charged until your stay
+                     </div>
+                     <div class="localcurr">
+                        - Pay the property fdirectly in their local currncy
+                     </div>
+                </div>
+                <div class="rightboxprice">
+                    <div class="pricedollar secnd">
+                        $96
+                    </div>
+                    <div class="pernight">
+                        per night
+                    </div>
+                    <div class="totalprice">
+                        $105 total
+                    </div>
+                    <div class="incldfar">
+                        includes taxes and fare
+                    </div>
+                 
+                      <button class="revv prop" id="book">
+                        Pay at the property
+                    </button>
+                  
+                </div>
+            </div>
+            <hr>
+            
+        </div>
+      </div>
+    
+    </div>
     <script src="js/navbar.js"></script>
+    <script src="js/popop.js"></script>
   </body>
 </html>

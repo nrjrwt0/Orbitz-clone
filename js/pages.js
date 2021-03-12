@@ -43,43 +43,97 @@ var hotels = [
     img: 4,
   },
   {
-    name: 'JW Marriott',
+    name: 'Remarkable',
     hotelrate: 4.8,
     price: 78,
     img: 5,
   },
   {
-    name: 'four season hotel',
+    name: 'Vivanta',
     hotelrate: 4.5,
     price: 68,
     img: 6,
   },
   {
-    name: 'sofitel',
+    name: 'Novotel',
     hotelrate: 4.3,
     price: 39,
     img: 7,
   },
   {
-    name: 'Taj lands',
+    name: 'Roseate House',
     hotelrate: 3.8,
     price: 58,
     img: 8,
   },
   {
-    name: 'Trident',
+    name: 'Omehar stay',
+    hotelrate: 3.3,
+    price: 47,
+    img: 9,
+  },
+  {
+    name: 'Gaurav House',
+    hotelrate: 4.8,
+    price: 89,
+    img: 0,
+  },
+  {
+    name: 'Hotel sunstar Heritage',
+    hotelrate: 4.5,
+    price: 67,
+    img: 1,
+  },
+  {
+    name: 'Hyat residency',
+    hotelrate: 4.3,
+    price: 59,
+    img: 2,
+  },
+  {
+    name: 'Red fox hotel',
+    hotelrate: 3.8,
+    price: 61,
+    img: 3,
+  },
+  {
+    name: 'Welcome Heritage',
+    hotelrate: 3.3,
+    price: 48,
+    img: 4,
+  },
+  {
+    name: 'Hotel white castel',
+    hotelrate: 4.8,
+    price: 78,
+    img: 5,
+  },
+  {
+    name: 'Vivanta',
+    hotelrate: 4.5,
+    price: 68,
+    img: 6,
+  },
+  {
+    name: 'Novotel',
+    hotelrate: 4.3,
+    price: 39,
+    img: 7,
+  },
+  {
+    name: 'Roseate House',
+    hotelrate: 3.8,
+    price: 58,
+    img: 8,
+  },
+  {
+    name: 'Omehar stay',
     hotelrate: 3.3,
     price: 47,
     img: 9,
   },
 ];
-var names = [
-  'Jw Marriott',
-  'four season hotel',
-  'sofitel',
-  'Taj lands',
-  'Trident',
-];
+
 var prices = [39, 47, 48, 58, 59, 61, 67, 68, 78, 89];
 var Price = [];
 // ascending order
