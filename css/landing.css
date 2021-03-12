@@ -41,6 +41,7 @@
 }
 #bookingBox > ul > li > i {
   margin-bottom: 14px;
+  /* border: 1px solid red; */
 }
 #bookingBox > ul > li > p {
   font-size: 16px;
