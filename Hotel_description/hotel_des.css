@@ -143,56 +143,54 @@
 .lock_logo {
   margin-top: 2px;
 }
-#unesco{
+#unesco {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
-.small_vip_btn{
+.small_vip_btn {
   height: 20px;
   width: 90px;
   border-radius: 10px;
   background-color: black;
   color: white;
 }
-#unesco>div:nth-child(2){
-/* margin-top: -1em; */
+#unesco > div:nth-child(2) {
+  /* margin-top: -1em; */
 }
-#hotel_name{
+#hotel_name {
   /* margin-top: -2em; */
 }
-#star{
+#star {
   display: flex;
   /* margin-top: -1em; */
 }
-.color_star{
+.color_star {
   color: rgb(112, 111, 111);
 }
-.class_review{
- color:  #3c8f8b;
+.class_review {
+  color: #3c8f8b;
 }
-#reviews{
+#reviews {
   display: flex;
   justify-content: space-between;
-  
 }
-#class_review{
-margin-top: 30px;
+#class_review {
+  margin-top: 30px;
 }
-#Popular{
+#Popular {
   /* margin-top: -1em;  */
   margin-bottom: 10px;
 }
-#pool{
+#pool {
   display: flex;
   gap: 10px;
   width: 30%;
 }
-.shift{
-   margin-top: -0.1em; 
-  
+.shift {
+  margin-top: -0.1em;
 }
-#amenities{
+#amenities {
   display: flex;
   gap: 50px;
   margin-bottom: 20px;

@@ -161,6 +161,12 @@ html {
   margin-top: 2px;
 }
 
+#lock_logo a,
+#learnmore > a {
+  text-decoration: none;
+  color: #007e8f;
+}
+
 /* hotel rooms list */
 .place {
   width: 86%;
@@ -389,4 +395,74 @@ html {
   opacity: 0.9;
 }
 
-/* pop up */
+/* review Box and details box */
+#hotelDetailsDiv {
+  width: 86%;
+  margin: auto;
+  padding: 4px 20px;
+  background-color: white;
+}
+#unesco {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0px 20px;
+}
+.small_vip_btn {
+  height: 20px;
+  width: 90px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+#unesco > div:nth-child(2) {
+  /* margin-top: -1em; */
+}
+#hotel_name {
+  /* margin-top: -2em; */
+  margin-bottom: 10px;
+}
+#star {
+  display: flex;
+  margin-bottom: 10px;
+  /* margin-top: -1em; */
+}
+.color_star {
+  color: rgb(112, 111, 111);
+}
+.color_star {
+  color: rgb(112, 111, 111);
+  margin-bottom: 10px;
+}
+.class_review {
+  color: #3c8f8b;
+}
+#reviews {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+#reviews h3 + p {
+  color: #999999;
+}
+#class_review {
+  margin-top: 30px;
+}
+#Popular {
+  /* margin-top: -1em;  */
+  margin-bottom: 20px;
+}
+#pool {
+  display: flex;
+  gap: 10px;
+  width: 30%;
+}
+.shift {
+  margin-top: -0.1em;
+}
+#amenities {
+  padding: 4px 20px;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+  color: #999999;
+}
