@@ -63,7 +63,7 @@ function login(e){
    for (var i of data1) {
     //console.log(i.email);
     if (i.email == email && i.password==pass) {
-      alert("Login succesfull")
+      
         console.log("yes");
 
         var win= window.location.href
@@ -75,9 +75,9 @@ function login(e){
 
         setTimeout(function(){
             window.location.href=`hotelDetails.html?username=${i.name}&name=${search}`
-        },2000)
+        },1000)
     }else{
-        alert("Wrong Password or Email")
+        swal("Wrong email or password", "Please Enter valid email or password", "error");
     }
 }
 

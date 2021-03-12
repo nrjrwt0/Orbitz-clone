@@ -44,6 +44,10 @@ var username=params.get('username')
 console.log(search,username);
 if(search!=null){
   document.getElementById('hotelname').textContent=search
+} 
+
+if(search=="null"){
+  document.getElementById('hotelname').textContent="Hotel Hayat"
 }
 var user= document.getElementById('username')
 
@@ -51,8 +55,8 @@ if(username==null){
   user.textContent="Sign In"
 }else{
   user.textContent=username
+  
 }
-
 
 var book = document.getElementById('book')
 
