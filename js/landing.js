@@ -88,7 +88,6 @@ var redirectToHotelPage = () => {
     .value;
   console.log(searchedLocation);
   let searchBtn = document.getElementById('searchBtn');
-  let url =
-    '/Users/neerajrawat/Desktop/MASAI COURSE/untitled folder 2/Orbitz-clone/Orbitz-clone/pages.html';
+  let url = 'pages.html';
   window.location.assign(url + '?' + searchedLocation);
 };
