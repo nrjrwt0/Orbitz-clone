@@ -17,7 +17,7 @@
   padding-bottom: 5px;
 }
 .fas{
-  color: rgb(8, 190, 190);
+  color: #08bebe;
   margin-top: 10px;
   margin-left: 10px;
   font-size: 15px;
@@ -150,7 +150,9 @@ height: 500px;
 
 /* The Close Button */
 .close {
-color: #aaaaaa;
+   position: relative;
+   bottom: 13px;
+color: #08bebe;
 float: right;
 font-size: 28px;
 font-weight: bold;

@@ -42,7 +42,9 @@ var params = new URLSearchParams(url.search)
 var search=params.get('name')
 var username=params.get('username')
 console.log(search,username);
-
+if(search!=null){
+  document.getElementById('hotelname').textContent=search
+}
 var user= document.getElementById('username')
 
 if(username==null){
@@ -58,6 +60,8 @@ function logIN(){
     
   if(username==null){
     window.location.href=`login.html?name=${search}`
+  }else{
+    window.location.href=`payment.html?username=${username}`
   }
 }
 book.onclick=logIN
