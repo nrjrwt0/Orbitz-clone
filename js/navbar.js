@@ -40,4 +40,24 @@ var url =new URL(win)
 var params = new URLSearchParams(url.search)
 
 var search=params.get('name')
-console.log(search);
+var username=params.get('username')
+console.log(search,username);
+
+var user= document.getElementById('username')
+
+if(username==null){
+  user.textContent="Sign In"
+}else{
+  user.textContent=username
+}
+
+
+var book = document.getElementById('book')
+
+function logIN(){
+    
+  if(username==null){
+    window.location.href=`login.html?name=${search}`
+  }
+}
+book.onclick=logIN

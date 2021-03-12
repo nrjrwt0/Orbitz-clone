@@ -48,3 +48,39 @@ function aple(){
     window.open("https://appleid.apple.com/auth/authorize?response_type=code&client_id=com.orbitz.iphoneprod.release&response_mode=form_post&scope=name%20email&state=PfzW0K7Xi1DOEFXCwCePZu6WNGdNikzcGllMaGOPYlU&nonce=Fb-RIxY-rU6Xev512hAzR8m8zsHrUxcEIdqCuDXkSSU&redirect_uri=https://www.orbitz.com/api/v1/oauth/user/profile/callback/apple-web&locale=en_US",'example', 'width=500,height=500')
 }
 apple.onclick = aple
+
+// login
+
+var form2 = document.getElementById("login")
+function login(e){
+   e.preventDefault()
+   var email= document.getElementById('email').value;
+   var pass= document.getElementById('password').value;
+   console.log(email,pass);
+
+   var data= localStorage.getItem('signup')
+   var data1= JSON.parse(data)
+   for (var i of data1) {
+    //console.log(i.email);
+    if (i.email == email && i.password==pass) {
+      alert("Login succesfull")
+        console.log("yes");
+
+        var win= window.location.href
+        var url =new URL(win)
+        
+        var params = new URLSearchParams(url.search)
+        
+        var search=params.get('name')
+
+        setTimeout(function(){
+            window.location.href=`hotelDetails.html?username=${i.name}&name=${search}`
+        },2000)
+    }else{
+        alert("Wrong Password or Email")
+    }
+}
+
+
+}
+form2.onsubmit= login
