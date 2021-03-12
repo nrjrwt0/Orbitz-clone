@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Account</title>
-   <link rel="stylesheet" href="User/css/signin.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <a href="landing.html"> <div class="back" id="cross">
-        <i class="fa fa-times" aria-hidden="true"></i>
-    </div></a>
-    <hr>
+    <link rel="stylesheet" href="User/css/signin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="images/logo.svg" />
+  </head>
+  <body>
+    <a href="landing.html">
+      <div class="back" id="cross">
+        <i class="fa fa-times" aria-hidden="true"></i></div
+    ></a>
+    <hr />
     <div class="main">
-        <div class="facebook">
-            <h2>Create an account with</h2>
-       
-            <div class="apple" id="app">
-                <img src="User/images/applelogo.jpg" alt="">
-                <h2 id="show1">Apple</h2>
-                <i class="fa fa-angle-right"></i>
-            </div>
-         
-            <div class="face" id="face">
-                <img src="User/images/fb.png" alt="">
-                <h2 id="show2">Facebook</h2>
-                <i class="fa fa-angle-right" ></i>
-            </div>
-      
+      <div class="facebook">
+        <h2>Create an account with</h2>
+
+        <div class="apple" id="app">
+          <img src="User/images/applelogo.jpg" alt="" />
+          <h2 id="show1">Apple</h2>
+          <i class="fa fa-angle-right"></i>
         </div>
-        <div class="email">
-            <form action="" id="signin">
-                <h2>Or create an account with email</h2>
-            
-             <div class="mail">
-                <input type="text" id="f&l_name" class="inputText"  required><br>
-                <span class="floating-label">First and last name</span>
-            </div>
-            <div class="mail">
-                <input type="email" id="email"  class="inputText"required>
-                <span class="floating-label">Your email address</span>
-            </div>
-            <div class="mail">
-                <input type="password" id="password" class="inputText" minlength="8"  maxlength="30" required> <i class="fa fa-eye" id="togglePassword"></i><br>
-                <span class="floating-label">Password</span>
-            </div>
-            
-             <p>Must be 8 to 30 characters with no spaces
-            </p>
-            <p>By creating an account, I agree to the Orbitz <a href=""><span>Terms of Use,Privacy Policy</span></a>, and <a href=""><span>Orbitz Rewards Terms and Conditions.</span></a></p>
-             <input type="submit" value="Create account" id="create">
-             <p>Already have an account?<a href="login.html"><span>Sign in</span></a></p>
-            </form>
+
+        <div class="face" id="face">
+          <img src="User/images/fb.png" alt="" />
+          <h2 id="show2">Facebook</h2>
+          <i class="fa fa-angle-right"></i>
         </div>
+      </div>
+      <div class="email">
+        <form action="" id="signin">
+          <h2>Or create an account with email</h2>
+
+          <div class="mail">
+            <input type="text" id="f&l_name" class="inputText" required /><br />
+            <span class="floating-label">First and last name</span>
+          </div>
+          <div class="mail">
+            <input type="email" id="email" class="inputText" required />
+            <span class="floating-label">Your email address</span>
+          </div>
+          <div class="mail">
+            <input
+              type="password"
+              id="password"
+              class="inputText"
+              minlength="8"
+              maxlength="30"
+              required
+            />
+            <i class="fa fa-eye" id="togglePassword"></i><br />
+            <span class="floating-label">Password</span>
+          </div>
+
+          <p>Must be 8 to 30 characters with no spaces</p>
+          <p>
+            By creating an account, I agree to the Orbitz
+            <a href=""><span>Terms of Use,Privacy Policy</span></a
+            >, and
+            <a href=""><span>Orbitz Rewards Terms and Conditions.</span></a>
+          </p>
+          <input type="submit" value="Create account" id="create" />
+          <p>
+            Already have an account?<a href="login.html"
+              ><span>Sign in</span></a
+            >
+          </p>
+        </form>
+      </div>
     </div>
     <script src="User/js/signin.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-</body>
+  </body>
 </html>
