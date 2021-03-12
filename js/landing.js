@@ -20,25 +20,10 @@ window.addEventListener('load', () => {
     .querySelector('.searchButton')
     .addEventListener('click', redirectToHotelPage);
 
-  let bookicons = document.querySelectorAll('.bookicons');
-  bookicons.forEach((el) => {
-    el.addEventListener('click', bookingDetailShowbyIcon);
-  });
-
   // var currentDate = new Date();
   // console.log(currentDate.getDate());
   // console.log(currentDate.getMonth());
 });
-
-var bookingDetailShowbyIcon = (event) => {
-  currentBooking = event.target.parentNode;
-  currentBooking.classList.remove('currentBooking');
-  console.log(currentBooking);
-  currentBooking.classList.add('currentBooking');
-  let dataKey = currentBooking.getAttribute('data-key');
-  showbookingDetailShow(dataKey);
-  // console.log(dataKey);
-};
 
 var changeBookingSlot = (event) => {
   let currentBooking = document.querySelector('.currentBooking');
@@ -92,7 +77,6 @@ var showbookingDetailShow = (dataKey) => {
     let dataKey2 = el.getAttribute('data-key');
     if (dataKey == dataKey2) {
       el.classList.add('displayDetails');
-      // console.log(el.classList);
     } else {
       el.classList.remove('displayDetails');
     }

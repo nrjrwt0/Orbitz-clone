@@ -33,3 +33,11 @@ var showSignIn = () => {
     signInCounter++;
   }
 };
+
+var win= window.location.href
+var url =new URL(win)
+
+var params = new URLSearchParams(url.search)
+
+var search=params.get('name')
+console.log(search);
