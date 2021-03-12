@@ -184,7 +184,6 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
-  z-index: 200;
 }
 .checkboxAndBtn button:hover {
   opacity: 0.9;
@@ -201,7 +200,7 @@
   border-radius: 10px;
   color: black;
   box-shadow: 0px 0px 10px;
-  /* z-index: 10; */
+  z-index: 10;
 }
 .searchLocationDiv > input {
   width: 100%;
