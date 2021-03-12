@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <title>Orbitz: Payment</title>
+  </head>
+  <body>
+    <div id="paymentCont">
+      <nav>
+        <ul>
+          <li id="logo">
+            <a href="landing.html">
+              <img
+                src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" id="moreTravel">More travel<i class="arrow"></i></a>
+            <div class="submenu">
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-building fa-xs"></i>Hotels</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-plane fa-xs"></i>Flights</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-suitcase fa-xs"></i>Packages</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-car fa-xs"></i>Cars</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-home fa-xs"></i>Vacation Rental</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-ship fa-xs"></i>Cruises</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-box fa-xs"></i>Things to do</a>
+                </li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Travel Blog</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">Español</a>
+          </li>
+          <li>
+            <a href="#">List your property</a>
+          </li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Trips</a></li>
+          <li class="signinDiv">
+            <a href="#">Sign In</a>
+            <div class="signin">
+              <h3>Members can access discounts, points and special features</h3>
+              <a href="login.html"> <button>Sign in</button></a>
+              <a href="signin.html" id="createAcc">Create a free account</a>
+              <a href="#">List of favourites</a>
+              <a href="#">Loyaity program</a>
+              <hr />
+              <a href="#">Feedback</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div id="fullwrap">
+        <div id="paymentWrapper">
+          <h2>Secure booking - only takes 2 minutes!</h2>
+          <p>
+            <i class="fas fa-check"></i> You've picked a winner! This hotel is
+            rated 4.2/5
+          </p>
+
+          <div class="blocks lock">
+            <i class="fas fa-lock fa-lg"></i>Welcome
+          </div>
+          <div class="blocks room">
+            <div class="user">
+              <div class="userIconDiv">
+                <i class="fas fa-user"></i>
+
+                <span>Room 1:</span>
+                2 Adults, 1 Double Bed, Non-smoking
+                <br />
+                <i class="fas fa-check tick"></i>
+                <span>Free WiFi</span>
+              </div>
+              <div class="userDetails">
+                <label for="">Contact name</label>
+                <input type="text" placeholder="First and last name" />
+                <label for="">Mobile phone number</label>
+                <select name="code" id="code">
+                  <option value="India">India +91</option>
+                  <option value="USA">USA +1</option>
+                </select>
+                <input
+                  id="phoneNum"
+                  type="text"
+                  placeholder="So the property can reach you"
+                />
+                <br />
+                <input type="checkbox" id="checkBox" /><span
+                  >Receive text alerts about this trip. Message and data rates
+                  may apply.</span
+                >
+                <a href="#">Special Requests (optional)</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="blocks protect">
+            <div class="headingProtect">
+              <i class="fas fa-shield-alt fa-lg"></i>
+              <span>Protect your hotel</span>
+              <button>Recommended</button>
+            </div>
+            <div class="importantMsg">
+              <i class="fas fa-info-circle"></i> <span>Important:</span> Travel
+              insurance may provide coverage for COVID-19 diagnosed illness.
+              Trip cancellation due to government travel advisories or fear of
+              travel is not covered. COVID-19 is a foreseen event and certain
+              other coverages will not apply. <a href="#">Learn more</a>
+            </div>
+
+            <div class="reasons">
+              <h3>4 reasons you might need travel protection</h3>
+              <ol>
+                <li>
+                  You get delayed for covered reasons and miss a night of your
+                  hotel stay
+                </li>
+                <li>You're sick and don't use all your hotel nights</li>
+                <li>
+                  You need to extend your trip due to the illness of a travel
+                  companion
+                </li>
+                <li>
+                  You need up to $10,000 for covered medical expenses while on
+                  your trip
+                </li>
+              </ol>
+              <a href="#">View insurance details and disclosures </a>
+            </div>
+            <div class="selectYesOrNo">
+              <h4>Select Yes or No to continue booking</h4>
+              <div>
+                <div>
+                  <input type="checkbox" />Yes, I want Hotel Booking Protection
+                  Plus for my trip to London.
+                </div>
+                <div><span>$8.00</span><span>per person</span></div>
+              </div>
+              <div>
+                <input type="checkbox" />No, I'm willing to risk my $66.43
+                trip..
+              </div>
+
+              <div>
+                “ Things happened outside of my control which caused the trip to
+                be canceled. The Travel Protection was valuable in reducing the
+                losses to me when we had to cancel the trip. ” -
+                <span>Mr. Rodman</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="blocks cardDetails">
+            <div class="cardIcon">
+              <i class="far fa-credit-card"></i>
+              <i class="fas fa-check tick"></i>
+              <span> We use secure transmission </span>
+              <i class="fas fa-check tick"></i>
+              <span>We protect your personal information</span>
+            </div>
+            <div id="fillCardDetails">
+              <div class="cardCategories">
+                <a href="#">Debit/Credit Card</a>
+                <a href="#">PayPal</a>
+                <a href="#">Click-to-Pay</a>
+                <hr />
+                <div class="diffCards">
+                  <div>
+                    <img
+                      src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhoffmanmusic.homestead.com%2FCredit-Card-Logos.jpg&f=1&nofb=1"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="hotelDetails"></div>
+      </div>
+    </div>
+
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
