@@ -86,9 +86,11 @@ var showbookingDetailShow = (dataKey) => {
 var redirectToHotelPage = () => {
   let searchedLocation = document.querySelector('.searchLocationDiv > input')
     .value;
-  console.log(searchedLocation);
+  let currentLoction = document.querySelector('.currentLocation');
+  console.log(currentLoction);
+  // console.log(searchedLocation);
   let searchBtn = document.getElementById('searchBtn');
   let url = 'pages.html';
 
-   window.location.assign(`${url}?search=${searchedLocation}`);
+  window.location.assign(`${url}?search=${searchedLocation}`);
 };
