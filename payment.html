@@ -203,12 +203,115 @@
                     />
                   </div>
                 </div>
+
+                <div id="details">
+                  <label for="nameOfCard">Name on Card</label>
+                  <input type="text" id="nameOfCard" />
+                  <label for="debCardNum">Debit/Credit card number</label>
+                  <input type="text" minlength="16" id="debCardNum" />
+                  <label for="">Expiration date</label>
+                  <select name="month" id="month">
+                    <option value="month">Month</option>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sept">Sept</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Nov">Dec</option>
+                  </select>
+                  <select name="year" id="year">
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                  </select>
+
+                  <div id="securityAndZipDiv">
+                    <div>
+                      <label for=""> Security code </label>
+                      <input type="text" minlength="3" />
+                    </div>
+                    <div>
+                      <label for=""> Billing ZIP code</label>
+                      <input type="text" minlength="6" />
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+
+          <div class="blocks infoAboutOurBooking">
+            <h4>Important information about your booking</h4>
+            <ul>
+              <li>
+                Cancellations or changes made after 2:00pm (GMT Standard Time)
+                on Apr 10, 2021 or no-shows are subject to a property fee equal
+                to 100% of the total amount paid for the reservation.
+              </li>
+              <li>
+                Front desk staff will greet guests on arrival. For more details,
+                please contact the property using the information on the booking
+                confirmation.
+              </li>
+              <li>
+                Due to COVID-19, this property's food and beverage options may
+                be limited pursuant to local regulations.
+              </li>
+              <li>
+                This property can only accept bookings for essential travel or
+                stays. You may be asked to provide evidence of this on arrival.
+                For more information, check local advisories before you book.
+              </li>
+            </ul>
+            <p>
+              By selecting to complete this booking I acknowledge that I have
+              read and accept the <a href="#">Rules & Restrictions</a>,
+              <a href="#">Terms of Use </a>,<a href="#">Privacy Policy</a> and
+              <a href="#">Government Travel Advice</a>
+            </p>
+            <p>
+              <i class="fas fa-check"></i> Change of plans? No problem. You can
+              cancel for free before <a href="$">Sat, Apr 10</a>
+            </p>
+
+            <button class="completeBtn">Complete Button</button>
+            <div>
+              <i class="fas fa-lock"></i>We use secure transmission and
+              encrypted storage to protect your personal information. <br />
+              This payment will be processed in the U.S. This does not apply
+              when the travel provider (airline/hotel/rail, etc.) processes your
+              payment.
             </div>
           </div>
         </div>
 
         <div id="hotelDetails"></div>
+      </div>
+      <div class="foot">
+        <div class="copyright">
+          <div class="rate">
+            © 2021 Orbitz, LLC, An Expedia Group Company. All rights reserved.
+          </div>
+        </div>
+        <div class="expedia">
+          <img
+            src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+            alt=""
+          />
+        </div>
       </div>
     </div>
 
