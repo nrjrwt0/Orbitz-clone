@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 #bookingDiv {
   height: 65vh;
   min-height: 486px;
@@ -874,7 +877,7 @@
   width: 25%;
   border-radius: 15px;
   position: fixed;
-  top: 160px;
+  top: 70px;
   right: 36px;
   z-index: 120;
   box-shadow: 0px 0px 10px;
