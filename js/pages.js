@@ -5,6 +5,10 @@ var params = new URLSearchParams(url.search);
 
 var search = params.get('search');
 console.log(search);
+
+var loc = document.getElementById('loc');
+loc.innerHTML = search;
+
 var s1 = search;
 var s2 = s1;
 var mapframe = document.getElementById('mapframe');
@@ -222,7 +226,7 @@ select.addEventListener(
   function () {
     setTimeout(function () {
       add(Price);
-    }, 2000);
+    }, 1500);
   },
   false
 );
