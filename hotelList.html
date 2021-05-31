@@ -1,615 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/all.min.css" />
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .place{
-            width: 100%;
-            /* border: 1px solid red; */
-            background-color:#E6E6E6;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .rooms{
-            height: 148.09px;
-            width: 900px;
-            background-color: white;
-            border-bottom: 1px solid #C7C7C7;
-            display: flex;
-            /* border: 1px solid blue; */
-            justify-content:start;
-            margin-bottom: 7px;
-        }
-        .hotpic{
-            width: 225px;
-            height: 148px;
-            /* background:url('./images/dorm.jpg'); */
-            background-repeat: no-repeat;
-            /* border: 1px solid red; */
-            /* margin: auto; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .rodeta{
-            height: 130px;
-            width: 265px;
-            padding: 9px 0 9px 0;
-            /* border: 1px solid red; */
-            display: flex;
-            flex-direction: column;
-        }
-        .roomtype{
-            font-size: 16.5px;
-            font-weight: 700;
-            line-height: 19.5px;
-            /* padding-left: 6px; */
-        }
-        .roomrating{
-            font-size: 10.5px;
-            line-height: 13.5px;
-            color: #616161;
-            margin-left: 2px;
-        }
-        .sqft{
-            font-size: 9px;
-            line-height: 12px;
-            display: flex;
-            /* border: 2px solid red; */
-            margin-left: 5px;
-            margin-top: 10px;
-            margin-bottom: 2px;
-            justify-content: space-between;
-            width: 250px;
-        }
-        .tesla{
-            margin-right: 2px;
-        }
-        .humid{
-            margin-top: 0px;
-        }
-        .moredetail{
-            font-size: 10.5px;
-            line-height: 13.5px;
-            color: #007E8F;
-            margin-top: 10px;
-            margin-left: 7px;
-        }
-        .moredetail:hover{
-            cursor: pointer;
-            text-decoration: underline solid rgb(0,126,143);
-        }
-        
-        .pridet{
-            height: 146px;
-            width: 405px;
-            /* border: 1px solid black; */
-            display: flex;
-            justify-content: space-between;
-        }
-        .cancellation{
-            width: 265px;
-            /* border: 1px solid red; */
-        }
-        .frcn{
-            margin-top: 10px;
-            margin-left: 25px;
-            font-size: 10.5px;
-            /* font-weight: 700; */
-            line-height: 13.5px;
-            color: #0e8445;
-            cursor: pointer;
-        }
-        .frcn:hover{
-            text-decoration: underline solid rgb(0,126,143);
-        }
-        .before{
-            font-size: 9px;
-            font-weight: 500;
-            line-height: 12px;
-            margin-left: 25px;
-            color: #616161;
-        }
-        .now{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            /* border: 1px solid red; */
-            width: 170px;
-            /* height: 50px; */
-            margin-left: 25px;
-            margin-top: 15px;
-            margin-bottom: 4px;
-        }
-        .parm{
-            margin-top: 0px;
-            width: 200px;
-        }
-        .check{
-            font-size: 9px;
-            line-height: 12px;
-            color: #616161;
-        }
-        .dollar{
-            /* border: 1px solid rgb(255, 0, 0); */
-            width: 135px;
-            height:146px ;
-            display: flex;
-            flex-direction: column;
-            justify-content:right;
-        }
-        .prc{
-            font-size: 16.5px;
-            font-weight: 700;
-            line-height: 21.2143px;
-            color: #616161;
-            text-align: right;
-            margin-top: 15px;
-            margin-right: 8px;
-        }
-        .pernt{
-            font-size: 9px;
-            line-height: 10.8px;
-            color: #616161;
-            text-align: right;
-            margin-right:8px;
-            margin-top: 2px;
-        }
-        .totalprc{
-            font-size: 9px;
-            line-height: 10.8px;
-            text-align: right;
-            margin-right: 8px;
-            margin-top: 2px;
-            font-weight: 700;
-        }
-        .taxnfar{
-            font-size: 9px;
-            line-height: 10.8px;
-            text-align: right;
-            margin-right: 8px;
-        }
-        .prcdet{
-            font-size: 10.5px;
-            line-height: 13.5px;
-            color: #007E8F;
-            margin-right: 8px;
-            margin-top: 8px;
-            text-align: right;
-        }
-        .prcdet:hover{
-            text-decoration: underline solid rgb(0,126,143);
-            cursor: pointer;
-        }
-        .butresrv{
-            width: 66.3368px;
-            height: 26.9965px;
-            background-color: #CF4B6D;
-            font-size: 12px;
-            font-weight: 500;
-            line-height: 15px;
-            justify-content: right;
-            color: white;
-            margin-left: 60px;
-            margin-top: 5px;
-            cursor: pointer;
-        }
+      * {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .place {
+        width: 100%;
+        /* border: 1px solid red; */
+        background-color: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .rooms {
+        height: 148.09px;
+        width: 900px;
+        background-color: white;
+        border-bottom: 1px solid #c7c7c7;
+        display: flex;
+        /* border: 1px solid blue; */
+        justify-content: start;
+        margin-bottom: 7px;
+      }
+      .hotpic {
+        width: 225px;
+        height: 148px;
+        /* background:url('./images/dorm.jpg'); */
+        background-repeat: no-repeat;
+        /* border: 1px solid red; */
+        /* margin: auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rodeta {
+        height: 130px;
+        width: 265px;
+        padding: 9px 0 9px 0;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+      }
+      .roomtype {
+        font-size: 16.5px;
+        font-weight: 700;
+        line-height: 19.5px;
+        /* padding-left: 6px; */
+      }
+      .roomrating {
+        font-size: 10.5px;
+        line-height: 13.5px;
+        color: #616161;
+        margin-left: 2px;
+      }
+      .sqft {
+        font-size: 9px;
+        line-height: 12px;
+        display: flex;
+        /* border: 2px solid red; */
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        justify-content: space-between;
+        width: 250px;
+      }
+      .tesla {
+        margin-right: 2px;
+      }
+      .humid {
+        margin-top: 0px;
+      }
+      .moredetail {
+        font-size: 10.5px;
+        line-height: 13.5px;
+        color: #007e8f;
+        margin-top: 10px;
+        margin-left: 7px;
+      }
+      .moredetail:hover {
+        cursor: pointer;
+        text-decoration: underline solid rgb(0, 126, 143);
+      }
+
+      .pridet {
+        height: 146px;
+        width: 405px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+      }
+      .cancellation {
+        width: 265px;
+        /* border: 1px solid red; */
+      }
+      .frcn {
+        margin-top: 10px;
+        margin-left: 25px;
+        font-size: 10.5px;
+        /* font-weight: 700; */
+        line-height: 13.5px;
+        color: #0e8445;
+        cursor: pointer;
+      }
+      .frcn:hover {
+        text-decoration: underline solid rgb(0, 126, 143);
+      }
+      .before {
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 12px;
+        margin-left: 25px;
+        color: #616161;
+      }
+      .now {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+        width: 170px;
+        /* height: 50px; */
+        margin-left: 25px;
+        margin-top: 15px;
+        margin-bottom: 4px;
+      }
+      .parm {
+        margin-top: 0px;
+        width: 200px;
+      }
+      .check {
+        font-size: 9px;
+        line-height: 12px;
+        color: #616161;
+      }
+      .dollar {
+        /* border: 1px solid rgb(255, 0, 0); */
+        width: 135px;
+        height: 146px;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+      }
+      .prc {
+        font-size: 16.5px;
+        font-weight: 700;
+        line-height: 21.2143px;
+        color: #616161;
+        text-align: right;
+        margin-top: 15px;
+        margin-right: 8px;
+      }
+      .pernt {
+        font-size: 9px;
+        line-height: 10.8px;
+        color: #616161;
+        text-align: right;
+        margin-right: 8px;
+        margin-top: 2px;
+      }
+      .totalprc {
+        font-size: 9px;
+        line-height: 10.8px;
+        text-align: right;
+        margin-right: 8px;
+        margin-top: 2px;
+        font-weight: 700;
+      }
+      .taxnfar {
+        font-size: 9px;
+        line-height: 10.8px;
+        text-align: right;
+        margin-right: 8px;
+      }
+      .prcdet {
+        font-size: 10.5px;
+        line-height: 13.5px;
+        color: #007e8f;
+        margin-right: 8px;
+        margin-top: 8px;
+        text-align: right;
+      }
+      .prcdet:hover {
+        text-decoration: underline solid rgb(0, 126, 143);
+        cursor: pointer;
+      }
+      .butresrv {
+        width: 66.3368px;
+        height: 26.9965px;
+        background-color: #cf4b6d;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        justify-content: right;
+        color: white;
+        margin-left: 60px;
+        margin-top: 5px;
+        cursor: pointer;
+      }
     </style>
-    
-</head>
-<body>
+  </head>
+  <body>
     <div class="place">
-       <div class="rooms">
-           <div class="hotpic">
-             <img src="./images/delux.jpg" alt="">
-           </div>
-           <div class="rodeta">
-                <div class="roomtype">
-                    Deluxe
-                </div>
-                <div class="roomrating">
-                    4.2/5 guest room rating
-                </div>
-                <div class="sqft">
-                    <div class="tesla">
-                        <i class="far fa-clone"></i>
-                            323 Sq. ft 
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-city"></i>
-                        City view 
-                    </div>
-                </div>      
-                <div class="sqft humid">
-                    <div class="tesla">
-                        <i class="fas fa-user-friends"></i>
-                            Sleeps 3
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-bed"></i>
-                          2 Twin beds
-                    </div>
-                </div>      
-                <div class="moredetail">
-                    More details <i class="fas fa-chevron-right"></i>
-                </div>
-           </div>
-           <div class="pridet">
-                <div class="cancellation">
-                   <div class="frcn">
-                       Free cancellation <i class="fas fa-info-circle"></i>
-                   </div>
-                   <div class="before">
-                       Before Wed, Apr 7
-                   </div>
-                   <div class="now">
-                        <div class="check">
-                            <i class="fas fa-check"></i> Reserve now, pay deposit
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-wifi"></i> Free Wifi
-                        </div>
-                   </div>
-                   <div class="now parm">
-                        <div class="check">
-                            <i class="fas fa-mug-hot"></i> Breakfast buffet included
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-parking"></i> Parking included
-                        </div>  
-                   </div>
-                </div>
-                <div class="dollar">
-                    <div class="prc">
-                        $96
-                    </div>
-                    <div class="pernt">
-                        per night
-                    </div>
-                    <div class="totalprc">
-                        $108 total
-                    </div>
-                    <div class="taxnfar">
-                        includes tax and fare
-                    </div>
-                    <div class="prcdet">
-                        Price details <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <button class="butresrv">Reserve</button>
-                </div>
-           </div>
-       </div>
-       <div class="rooms">
-           <div class="hotpic">
-             <img src="./images/suit.jpg" alt="">
-           </div>
-           <div class="rodeta">
-                <div class="roomtype">
-                    Suite
-                </div>
-                <div class="roomrating">
-                    4.8/5 guest room rating
-                </div>
-                <div class="sqft">
-                    <div class="tesla">
-                        <i class="far fa-clone"></i>
-                            323 Sq. ft 
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-city"></i>
-                        City view 
-                    </div>
-                </div>      
-                <div class="sqft humid">
-                    <div class="tesla">
-                        <i class="fas fa-user-friends"></i>
-                            Sleeps 3
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-bed"></i>
-                          2 Twin beds
-                    </div>
-                </div>      
-                <div class="moredetail">
-                    More details <i class="fas fa-chevron-right"></i>
-                </div>
-           </div>
-           <div class="pridet">
-                <div class="cancellation">
-                   <div class="frcn">
-                       Free cancellation <i class="fas fa-info-circle"></i>
-                   </div>
-                   <div class="before">
-                       Before Wed, Apr 7
-                   </div>
-                   <div class="now">
-                        <div class="check">
-                            <i class="fas fa-check"></i> Reserve now, pay deposit
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-wifi"></i> Free Wifi
-                        </div>
-                   </div>
-                   <div class="now parm">
-                        <div class="check">
-                            <i class="fas fa-mug-hot"></i> Breakfast buffet included
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-parking"></i> Parking included
-                        </div>  
-                   </div>
-                </div>
-                <div class="dollar">
-                    <div class="prc">
-                        $123
-                    </div>
-                    <div class="pernt">
-                        per night
-                    </div>
-                    <div class="totalprc">
-                        $135 total
-                    </div>
-                    <div class="taxnfar">
-                        includes tax and fare
-                    </div>
-                    <div class="prcdet">
-                        Price details <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <button class="butresrv">Reserve</button>
-                </div>
-           </div>
-       </div>
-       <div class="rooms">
-           <div class="hotpic">
-             <img src="./images/superior.jpg" alt="">
-           </div>
-           <div class="rodeta">
-                <div class="roomtype">
-                    Super Deluxe
-                </div>
-                <div class="roomrating">
-                    4.8/5 guest room rating
-                </div>
-                <div class="sqft">
-                    <div class="tesla">
-                        <i class="far fa-clone"></i>
-                            323 Sq. ft 
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-city"></i>
-                        City view 
-                    </div>
-                </div>      
-                <div class="sqft humid">
-                    <div class="tesla">
-                        <i class="fas fa-user-friends"></i>
-                            Sleeps 3
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-bed"></i>
-                          2 Twin beds
-                    </div>
-                </div>      
-                <div class="moredetail">
-                    More details <i class="fas fa-chevron-right"></i>
-                </div>
-           </div>
-           <div class="pridet">
-                <div class="cancellation">
-                   <div class="frcn">
-                       Free cancellation <i class="fas fa-info-circle"></i>
-                   </div>
-                   <div class="before">
-                       Before Wed, Apr 7
-                   </div>
-                   <div class="now">
-                        <div class="check">
-                            <i class="fas fa-check"></i> Reserve now, pay deposit
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-wifi"></i> Free Wifi
-                        </div>
-                   </div>
-                   <div class="now parm">
-                        <div class="check">
-                            <i class="fas fa-mug-hot"></i> Breakfast buffet included
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-parking"></i> Parking included
-                        </div>  
-                   </div>
-                </div>
-                <div class="dollar">
-                    <div class="prc">
-                        $145
-                    </div>
-                    <div class="pernt">
-                        per night
-                    </div>
-                    <div class="totalprc">
-                        $160 total
-                    </div>
-                    <div class="taxnfar">
-                        includes tax and fare
-                    </div>
-                    <div class="prcdet">
-                        Price details <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <button class="butresrv">Reserve</button>
-                </div>
-           </div>
-       </div>
-       <div class="rooms">
-           <div class="hotpic">
-             <img src="./images/trip.jpg" alt="">
-           </div>
-           <div class="rodeta">
-                <div class="roomtype">
-                    Triple Deluxe
-                </div>
-                <div class="roomrating">
-                    4.5/5 guest room rating
-                </div>
-                <div class="sqft">
-                    <div class="tesla">
-                        <i class="far fa-clone"></i>
-                            323 Sq. ft 
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-city"></i>
-                        City view 
-                    </div>
-                </div>      
-                <div class="sqft humid">
-                    <div class="tesla">
-                        <i class="fas fa-user-friends"></i>
-                            Sleeps 3
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-bed"></i>
-                          3 Twin beds
-                    </div>
-                </div>      
-                <div class="moredetail">
-                    More details <i class="fas fa-chevron-right"></i>
-                </div>
-           </div>
-           <div class="pridet">
-                <div class="cancellation">
-                   <div class="frcn">
-                       Free cancellation <i class="fas fa-info-circle"></i>
-                   </div>
-                   <div class="before">
-                       Before Wed, Apr 7
-                   </div>
-                   <div class="now">
-                        <div class="check">
-                            <i class="fas fa-check"></i> Reserve now, pay deposit
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-wifi"></i> Free Wifi
-                        </div>
-                   </div>
-                   <div class="now parm">
-                        <div class="check">
-                            <i class="fas fa-mug-hot"></i> Breakfast buffet included
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-parking"></i> Parking included
-                        </div>  
-                   </div>
-                </div>
-                <div class="dollar">
-                    <div class="prc">
-                        $160
-                    </div>
-                    <div class="pernt">
-                        per night
-                    </div>
-                    <div class="totalprc">
-                        $175 total
-                    </div>
-                    <div class="taxnfar">
-                        includes tax and fare
-                    </div>
-                    <div class="prcdet">
-                        Price details <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <button class="butresrv">Reserve</button>
-                </div>
-           </div>
-       </div>
-       <div class="rooms">
-           <div class="hotpic">
-             <img src="./images/family.jpg" alt="">
-           </div>
-           <div class="rodeta">
-                <div class="roomtype">
-                    Family stay
-                </div>
-                <div class="roomrating">
-                    4.5/5 guest room rating
-                </div>
-                <div class="sqft">
-                    <div class="tesla">
-                        <i class="far fa-clone"></i>
-                            323 Sq. ft 
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-city"></i>
-                        City view 
-                    </div>
-                </div>      
-                <div class="sqft humid">
-                    <div class="tesla">
-                        <i class="fas fa-user-friends"></i>
-                            Sleeps 6
-                    </div>
-                    <div class="tesla">
-                        <i class="fas fa-bed"></i>
-                          4 Twin beds
-                    </div>
-                </div>      
-                <div class="moredetail">
-                    More details <i class="fas fa-chevron-right"></i>
-                </div>
-           </div>
-           <div class="pridet">
-                <div class="cancellation">
-                   <div class="frcn">
-                       Free cancellation <i class="fas fa-info-circle"></i>
-                   </div>
-                   <div class="before">
-                       Before Wed, Apr 7
-                   </div>
-                   <div class="now">
-                        <div class="check">
-                            <i class="fas fa-check"></i> Reserve now, pay deposit
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-wifi"></i> Free Wifi
-                        </div>
-                   </div>
-                   <div class="now parm">
-                        <div class="check">
-                            <i class="fas fa-mug-hot"></i> Breakfast buffet included
-                        </div>
-                        <div class="check">
-                            <i class="fas fa-parking"></i> Parking included
-                        </div>  
-                   </div>
-                </div>
-                <div class="dollar">
-                    <div class="prc">
-                        $190
-                    </div>
-                    <div class="pernt">
-                        per night
-                    </div>
-                    <div class="totalprc">
-                        $205 total
-                    </div>
-                    <div class="taxnfar">
-                        includes tax and fare
-                    </div>
-                    <div class="prcdet">
-                        Price details <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <button class="butresrv">Reserve</button>
-                </div>
-           </div>
-       </div>
+      <div class="rooms">
+        <div class="hotpic">
+          <img src="./images/delux.jpg" alt="img" />
+        </div>
+        <div class="rodeta">
+          <div class="roomtype">Deluxe</div>
+          <div class="roomrating">4.2/5 guest room rating</div>
+          <div class="sqft">
+            <div class="tesla">
+              <i class="far fa-clone"></i>
+              323 Sq. ft
+            </div>
+            <div class="tesla">
+              <i class="fas fa-city"></i>
+              City view
+            </div>
+          </div>
+          <div class="sqft humid">
+            <div class="tesla">
+              <i class="fas fa-user-friends"></i>
+              Sleeps 3
+            </div>
+            <div class="tesla">
+              <i class="fas fa-bed"></i>
+              2 Twin beds
+            </div>
+          </div>
+          <div class="moredetail">
+            More details <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="pridet">
+          <div class="cancellation">
+            <div class="frcn">
+              Free cancellation <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="before">Before Wed, Apr 7</div>
+            <div class="now">
+              <div class="check">
+                <i class="fas fa-check"></i> Reserve now, pay deposit
+              </div>
+              <div class="check"><i class="fas fa-wifi"></i> Free Wifi</div>
+            </div>
+            <div class="now parm">
+              <div class="check">
+                <i class="fas fa-mug-hot"></i> Breakfast buffet included
+              </div>
+              <div class="check">
+                <i class="fas fa-parking"></i> Parking included
+              </div>
+            </div>
+          </div>
+          <div class="dollar">
+            <div class="prc">$96</div>
+            <div class="pernt">per night</div>
+            <div class="totalprc">$108 total</div>
+            <div class="taxnfar">includes tax and fare</div>
+            <div class="prcdet">
+              Price details <i class="fas fa-chevron-down"></i>
+            </div>
+            <button class="butresrv">Reserve</button>
+          </div>
+        </div>
+      </div>
+      <div class="rooms">
+        <div class="hotpic">
+          <img src="./images/suit.jpg" alt="img" />
+        </div>
+        <div class="rodeta">
+          <div class="roomtype">Suite</div>
+          <div class="roomrating">4.8/5 guest room rating</div>
+          <div class="sqft">
+            <div class="tesla">
+              <i class="far fa-clone"></i>
+              323 Sq. ft
+            </div>
+            <div class="tesla">
+              <i class="fas fa-city"></i>
+              City view
+            </div>
+          </div>
+          <div class="sqft humid">
+            <div class="tesla">
+              <i class="fas fa-user-friends"></i>
+              Sleeps 3
+            </div>
+            <div class="tesla">
+              <i class="fas fa-bed"></i>
+              2 Twin beds
+            </div>
+          </div>
+          <div class="moredetail">
+            More details <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="pridet">
+          <div class="cancellation">
+            <div class="frcn">
+              Free cancellation <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="before">Before Wed, Apr 7</div>
+            <div class="now">
+              <div class="check">
+                <i class="fas fa-check"></i> Reserve now, pay deposit
+              </div>
+              <div class="check"><i class="fas fa-wifi"></i> Free Wifi</div>
+            </div>
+            <div class="now parm">
+              <div class="check">
+                <i class="fas fa-mug-hot"></i> Breakfast buffet included
+              </div>
+              <div class="check">
+                <i class="fas fa-parking"></i> Parking included
+              </div>
+            </div>
+          </div>
+          <div class="dollar">
+            <div class="prc">$123</div>
+            <div class="pernt">per night</div>
+            <div class="totalprc">$135 total</div>
+            <div class="taxnfar">includes tax and fare</div>
+            <div class="prcdet">
+              Price details <i class="fas fa-chevron-down"></i>
+            </div>
+            <button class="butresrv">Reserve</button>
+          </div>
+        </div>
+      </div>
+      <div class="rooms">
+        <div class="hotpic">
+          <img src="./images/superior.jpg" alt="img" />
+        </div>
+        <div class="rodeta">
+          <div class="roomtype">Super Deluxe</div>
+          <div class="roomrating">4.8/5 guest room rating</div>
+          <div class="sqft">
+            <div class="tesla">
+              <i class="far fa-clone"></i>
+              323 Sq. ft
+            </div>
+            <div class="tesla">
+              <i class="fas fa-city"></i>
+              City view
+            </div>
+          </div>
+          <div class="sqft humid">
+            <div class="tesla">
+              <i class="fas fa-user-friends"></i>
+              Sleeps 3
+            </div>
+            <div class="tesla">
+              <i class="fas fa-bed"></i>
+              2 Twin beds
+            </div>
+          </div>
+          <div class="moredetail">
+            More details <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="pridet">
+          <div class="cancellation">
+            <div class="frcn">
+              Free cancellation <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="before">Before Wed, Apr 7</div>
+            <div class="now">
+              <div class="check">
+                <i class="fas fa-check"></i> Reserve now, pay deposit
+              </div>
+              <div class="check"><i class="fas fa-wifi"></i> Free Wifi</div>
+            </div>
+            <div class="now parm">
+              <div class="check">
+                <i class="fas fa-mug-hot"></i> Breakfast buffet included
+              </div>
+              <div class="check">
+                <i class="fas fa-parking"></i> Parking included
+              </div>
+            </div>
+          </div>
+          <div class="dollar">
+            <div class="prc">$145</div>
+            <div class="pernt">per night</div>
+            <div class="totalprc">$160 total</div>
+            <div class="taxnfar">includes tax and fare</div>
+            <div class="prcdet">
+              Price details <i class="fas fa-chevron-down"></i>
+            </div>
+            <button class="butresrv">Reserve</button>
+          </div>
+        </div>
+      </div>
+      <div class="rooms">
+        <div class="hotpic">
+          <img src="./images/trip.jpg" alt="img" />
+        </div>
+        <div class="rodeta">
+          <div class="roomtype">Triple Deluxe</div>
+          <div class="roomrating">4.5/5 guest room rating</div>
+          <div class="sqft">
+            <div class="tesla">
+              <i class="far fa-clone"></i>
+              323 Sq. ft
+            </div>
+            <div class="tesla">
+              <i class="fas fa-city"></i>
+              City view
+            </div>
+          </div>
+          <div class="sqft humid">
+            <div class="tesla">
+              <i class="fas fa-user-friends"></i>
+              Sleeps 3
+            </div>
+            <div class="tesla">
+              <i class="fas fa-bed"></i>
+              3 Twin beds
+            </div>
+          </div>
+          <div class="moredetail">
+            More details <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="pridet">
+          <div class="cancellation">
+            <div class="frcn">
+              Free cancellation <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="before">Before Wed, Apr 7</div>
+            <div class="now">
+              <div class="check">
+                <i class="fas fa-check"></i> Reserve now, pay deposit
+              </div>
+              <div class="check"><i class="fas fa-wifi"></i> Free Wifi</div>
+            </div>
+            <div class="now parm">
+              <div class="check">
+                <i class="fas fa-mug-hot"></i> Breakfast buffet included
+              </div>
+              <div class="check">
+                <i class="fas fa-parking"></i> Parking included
+              </div>
+            </div>
+          </div>
+          <div class="dollar">
+            <div class="prc">$160</div>
+            <div class="pernt">per night</div>
+            <div class="totalprc">$175 total</div>
+            <div class="taxnfar">includes tax and fare</div>
+            <div class="prcdet">
+              Price details <i class="fas fa-chevron-down"></i>
+            </div>
+            <button class="butresrv">Reserve</button>
+          </div>
+        </div>
+      </div>
+      <div class="rooms">
+        <div class="hotpic">
+          <img src="./images/family.jpg" alt="img" />
+        </div>
+        <div class="rodeta">
+          <div class="roomtype">Family stay</div>
+          <div class="roomrating">4.5/5 guest room rating</div>
+          <div class="sqft">
+            <div class="tesla">
+              <i class="far fa-clone"></i>
+              323 Sq. ft
+            </div>
+            <div class="tesla">
+              <i class="fas fa-city"></i>
+              City view
+            </div>
+          </div>
+          <div class="sqft humid">
+            <div class="tesla">
+              <i class="fas fa-user-friends"></i>
+              Sleeps 6
+            </div>
+            <div class="tesla">
+              <i class="fas fa-bed"></i>
+              4 Twin beds
+            </div>
+          </div>
+          <div class="moredetail">
+            More details <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="pridet">
+          <div class="cancellation">
+            <div class="frcn">
+              Free cancellation <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="before">Before Wed, Apr 7</div>
+            <div class="now">
+              <div class="check">
+                <i class="fas fa-check"></i> Reserve now, pay deposit
+              </div>
+              <div class="check"><i class="fas fa-wifi"></i> Free Wifi</div>
+            </div>
+            <div class="now parm">
+              <div class="check">
+                <i class="fas fa-mug-hot"></i> Breakfast buffet included
+              </div>
+              <div class="check">
+                <i class="fas fa-parking"></i> Parking included
+              </div>
+            </div>
+          </div>
+          <div class="dollar">
+            <div class="prc">$190</div>
+            <div class="pernt">per night</div>
+            <div class="totalprc">$205 total</div>
+            <div class="taxnfar">includes tax and fare</div>
+            <div class="prcdet">
+              Price details <i class="fas fa-chevron-down"></i>
+            </div>
+            <button class="butresrv">Reserve</button>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

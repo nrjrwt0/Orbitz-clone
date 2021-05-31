@@ -434,19 +434,19 @@ html {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .one {
-  background: url('../animal.png');
+  background: url('../images/animal.png');
   background-size: cover;
 }
 .two {
-  background: url('../incl.png');
+  background: url('../images/incl.png');
   background-size: cover;
 }
 .three {
-  background: url('../lux.png');
+  background: url('../images/lux.png');
   background-size: cover;
 }
 .four {
-  background: url('../min.png');
+  background: url('../images/min.png');
   background-size: cover;
 }
 .five {
@@ -467,7 +467,7 @@ html {
   float: left;
   height: 300px;
   width: 30%;
-  background: url('../mob.png');
+  background: url('../images/mob.png');
 }
 .content {
   float: left;
@@ -560,7 +560,7 @@ html {
   /* border: 1px solid red; */
 }
 .qrimg {
-  background: url('../QR.jpg');
+  background: url('../images/QR.jpg');
   width: 160px;
   height: 160px;
   margin-left: 40px;
