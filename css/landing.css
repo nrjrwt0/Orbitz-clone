@@ -679,7 +679,7 @@ html {
   cursor: pointer;
   margin: auto;
   width: 150px;
-  height: 200px;
+  height: 80px;
   padding: 20px;
 }
 
@@ -935,7 +935,7 @@ html {
   background-color: #999999;
   border-radius: 10px;
   margin-bottom: 8px;
-  color: ;
+  /* color: ; */
 }
 #chat_start2 {
   display: flex;
