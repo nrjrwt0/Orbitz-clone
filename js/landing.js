@@ -8,6 +8,8 @@ window.addEventListener('load', () => {
     el.addEventListener('click', changeBookingSlot);
   });
 
+  setCheckInCheckOutDates();
+
   let clickToSearchLocation = document
     .querySelector('.clickToSearchLocation')
     .addEventListener('click', showsearchLocationDiv);
@@ -35,6 +37,37 @@ window.addEventListener('load', () => {
   // console.log(currentDate.getDate());
   // console.log(currentDate.getMonth());
 });
+
+function setCheckInCheckOutDates() {
+  const checkInCheckOut = document.querySelectorAll('.date');
+  const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+
+  const today = new Date();
+  const tDate = today.getDate();
+  const tMonth = today.getMonth();
+
+  checkInCheckOut[0].innerHTML = `${months[tMonth]} ${tDate}`;
+
+  const nextDay = new Date(today);
+  nextDay.setDate(today.getDate() + 1);
+  const nDate = nextDay.getDate();
+  const nMonth = nextDay.getMonth();
+  checkInCheckOut[1].innerHTML = `${months[nMonth]} ${nDate}`;
+}
+
 var showChatBox = () => {
   let chatBox = document.getElementById('main_div');
   chatBox.style.display = 'block';
