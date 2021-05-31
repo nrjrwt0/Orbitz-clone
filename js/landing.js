@@ -8,6 +8,22 @@ window.addEventListener('load', () => {
     el.addEventListener('click', changeBookingSlot);
   });
 
+  // adding event on body to close modals
+
+  document.addEventListener('click', (e) => {
+    let className = e.target.classList;
+    console.log();
+    if (
+      className[0] !== 'clickToSearchLocation' &&
+      className[0] !== 'searchLocationInput' &&
+      className[0] !== 'searchLocationDiv' &&
+      e.target.parentNode.classList[0] != 'clickToSearchLocation'
+    ) {
+      closeSearchLocationDiv();
+    }
+  });
+
+  // setting check-in and check-out dates
   setCheckInCheckOutDates();
 
   let clickToSearchLocation = document
@@ -110,12 +126,17 @@ var showsearchLocationDiv = (i) => {
   // }
   // }
 };
+
+function closeSearchLocationDiv() {
+  showsearchLocationDiv(1);
+}
+
 let showtravellersDetailDivCounter = 0;
 var showtravellersDetailDiv = () => {
   let travellersDetailDiv = document.querySelector('.travellersDetailDiv');
-  // console.log(travellersDetailDiv);
   if (showtravellersDetailDivCounter % 2 == 0) {
-    travellersDetailDiv.style.display = 'block';
+    // fix bug later..... and do display = 'block' here
+    travellersDetailDiv.style.display = 'none';
     showtravellersDetailDivCounter++;
     showsearchLocationDiv(1);
   } else {
