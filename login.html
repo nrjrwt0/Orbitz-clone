@@ -1,54 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Customer Authorization</title>
-   <link rel="stylesheet" href="User/css/login.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-   <a href="landing.html"> <div class="back" id="cross">
-    <i class="fa fa-times" aria-hidden="true"></i>
-</div></a>
-    <hr>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <a href="index.html">
+      <div class="back" id="cross">
+        <i class="fa fa-times" aria-hidden="true"></i></div
+    ></a>
+    <hr />
     <div class="main">
-        <div class="facebook">
-            <h2>Welcome back! Sign in with</h2>
-       
-            <div class="apple" id="app">
-                <img src="User/images/applelogo.jpg" alt="">
-                <h2 id="show1">Apple</h2>
-                <i class="fa fa-angle-right"></i>
-            </div>
-         
-            <div class="face" id="face">
-                <img src="User/images/fb.png" alt="">
-                <h2 id="show2">Facebook</h2>
-                <i class="fa fa-angle-right" ></i>
-            </div>
-      
+      <div class="facebook">
+        <h2>Welcome back! Sign in with</h2>
+
+        <div class="apple" id="app">
+          <img src="./images/applelogo.jpg" alt="img" />
+          <h2 id="show1">Apple</h2>
+          <i class="fa fa-angle-right"></i>
         </div>
-        <div class="email">
-            <form action="" id="login">
-                <h2>Or sign in with email</h2>
-            <div class="mail">
-                <input type="email" id="email"  class="inputText"required>
-                <span class="floating-label">Your email address</span>
-            </div>
-            <div class="mail">
-                <input type="password" id="password" class="inputText" minlength="8"  maxlength="30" required> <i class="fa fa-eye" id="togglePassword"></i><br>
-                <span class="floating-label">Password</span>
-            </div>
-            <p id="keep"><input type="checkbox" id="checkbox"><label for="checkbox" id="keepid">Keep me signed in</label><a href="forgotpassword.html"><span id="pw">Forgot password?</span></a></p>
-            <p>By signing in, I agree to the  <a href=""><span>Orbitz Rewards Terms and Conditions.</span></a>.</p>
-             <input type="submit" value="Sign In" id="create">
-             <p>Not a member?<a href="signin.html"><span>Create an account</span></a></p>
-            </form>
+
+        <div class="face" id="face">
+          <img src="./images/fb.png" alt="img" />
+          <h2 id="show2">Facebook</h2>
+          <i class="fa fa-angle-right"></i>
         </div>
+      </div>
+      <div class="email">
+        <form action="" id="login">
+          <h2>Or sign in with email</h2>
+          <div class="mail">
+            <input type="email" id="email" class="inputText" required />
+            <span class="floating-label">Your email address</span>
+          </div>
+          <div class="mail">
+            <input
+              type="password"
+              id="password"
+              class="inputText"
+              minlength="8"
+              maxlength="30"
+              required
+            />
+            <i class="fa fa-eye" id="togglePassword"></i><br />
+            <span class="floating-label">Password</span>
+          </div>
+          <p id="keep">
+            <input type="checkbox" id="checkbox" /><label
+              for="checkbox"
+              id="keepid"
+              >Keep me signed in</label
+            ><a href="forgotpassword.html"
+              ><span id="pw">Forgot password?</span></a
+            >
+          </p>
+          <p>
+            By signing in, I agree to the
+            <a href=""><span>Orbitz Rewards Terms and Conditions.</span></a
+            >.
+          </p>
+          <input type="submit" value="Sign In" id="create" />
+          <p>
+            Not a member?<a href="signin.html"
+              ><span>Create an account</span></a
+            >
+          </p>
+        </form>
+      </div>
     </div>
-    <script src="User/js/login.js"></script>
+    <script src="./js/login.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-</body>
+  </body>
 </html>

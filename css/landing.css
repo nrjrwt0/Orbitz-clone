@@ -367,8 +367,8 @@ html {
   color: #999999;
 }
 
-.box2sDiv {
-}
+/* .box2sDiv {
+} */
 
 /* Footer */
 /* * {
@@ -434,19 +434,19 @@ html {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .one {
-  background: url('../animal.png');
+  background: url('../images/animal.png');
   background-size: cover;
 }
 .two {
-  background: url('../incl.png');
+  background: url('../images/incl.png');
   background-size: cover;
 }
 .three {
-  background: url('../lux.png');
+  background: url('../images/lux.png');
   background-size: cover;
 }
 .four {
-  background: url('../min.png');
+  background: url('../images/min.png');
   background-size: cover;
 }
 .five {
@@ -467,7 +467,7 @@ html {
   float: left;
   height: 300px;
   width: 30%;
-  background: url('../mob.png');
+  background: url('../images/mob.png');
 }
 .content {
   float: left;
@@ -560,7 +560,7 @@ html {
   /* border: 1px solid red; */
 }
 .qrimg {
-  background: url('../QR.jpg');
+  background: url('../images/QR.jpg');
   width: 160px;
   height: 160px;
   margin-left: 40px;
@@ -754,9 +754,9 @@ html {
   margin-top: 10px;
   display: flex;
 }
-.classgrey_col {
-  /* color: rgb(100, 98, 98); */
-}
+/* .classgrey_col { */
+/* color: rgb(100, 98, 98); */
+/* } */
 
 #large {
   /* margin-left: 150px; */
