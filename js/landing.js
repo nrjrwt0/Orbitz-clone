@@ -3,6 +3,10 @@ window.addEventListener('load', () => {
   bookingSlot.forEach((el) => {
     el.addEventListener('click', changeBookingSlot);
   });
+  let bookingSlotIcon = document.querySelectorAll('.bookingIcons > li > i');
+  bookingSlotIcon.forEach((el) => {
+    el.addEventListener('click', changeBookingSlot);
+  });
 
   let clickToSearchLocation = document
     .querySelector('.clickToSearchLocation')
@@ -42,9 +46,12 @@ var closeChatBox = () => {
 var changeBookingSlot = (event) => {
   let currentBooking = document.querySelector('.currentBooking');
   currentBooking.classList.remove('currentBooking');
-  // console.log(event.target);
-  event.target.classList.add('currentBooking');
-  let dataKey = event.target.getAttribute('data-key');
+  let selected = event.target;
+  if (event.target.tagName !== 'LI') {
+    selected = event.target.parentNode;
+  }
+  selected.classList.add('currentBooking');
+  let dataKey = selected.getAttribute('data-key');
   showbookingDetailShow(dataKey);
 };
 
